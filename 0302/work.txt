@@ -1,0 +1,748 @@
+Script started on Monday 03 February 2020 09:11:18 AM IST
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302[00m$ ssh cs18c50@192.168.0.30
+ssh: connect to host 192.168.0.30 port 22: Connection timed out
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302[00m$ ssh cs18c50@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c50@192.168.0.30's password: 
+Welcome to elementary OS 0.4.1 Loki (GNU/Linux 4.13.0-32-generic x86_64)
+
+ * Website:  http://elementary.io/
+
+402 packages can be updated.
+0 updates are security updates.
+
+$ ls
+cs232  examples.desktop
+$ cd /
+$ ls
+bin    core  home	 lib32	     media  proc  sbin	sys  var
+boot   dev   initrd.img  lib64	     mnt    root  snap	tmp  vmlinuz
+cdrom  etc   lib	 lost+found  opt    run   srv	usr
+$ quit
+-sh: 4: quit: not found
+$ exit
+Connection to 192.168.0.30 closed.
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302[00m$ cat > abc.txt
+125
+789
+345
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302[00m$ scp abc.txt cs18c50@192.168.0. 30:0302
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c50@192.168.0.30's password: 
+abc.txt                                         0%    0     0.0KB/s   --:-- ETAabc.txt                                       100%   12     0.0KB/s   00:00    
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302[00m$ rsync -a
+rsync  version 3.1.1  protocol version 31
+Copyright (C) 1996-2014 by Andrew Tridgell, Wayne Davison, and others.
+Web site: http://rsync.samba.org/
+Capabilities:
+    64-bit files, 64-bit inums, 64-bit timestamps, 64-bit long ints,
+    socketpairs, hardlinks, symlinks, IPv6, batchfiles, inplace,
+    append, ACLs, xattrs, iconv, symtimes, prealloc
+
+rsync comes with ABSOLUTELY NO WARRANTY.  This is free software, and you
+are welcome to redistribute it under certain conditions.  See the GNU
+General Public Licence for details.
+
+rsync is a file transfer program capable of efficient remote update
+via a fast differencing algorithm.
+
+Usage: rsync [OPTION]... SRC [SRC]... DEST
+  or   rsync [OPTION]... SRC [SRC]... [USER@]HOST:DEST
+  or   rsync [OPTION]... SRC [SRC]... [USER@]HOST::DEST
+  or   rsync [OPTION]... SRC [SRC]... rsync://[USER@]HOST[:PORT]/DEST
+  or   rsync [OPTION]... [USER@]HOST:SRC [DEST]
+  or   rsync [OPTION]... [USER@]HOST::SRC [DEST]
+  or   rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
+The ':' usages connect via remote shell, while '::' & 'rsync://' usages connect
+to an rsync daemon, and require SRC or DEST to start with a module name.
+
+Options
+ -v, --verbose               increase verbosity
+     --info=FLAGS            fine-grained informational verbosity
+     --debug=FLAGS           fine-grained debug verbosity
+     --msgs2stderr           special output handling for debugging
+ -q, --quiet                 suppress non-error messages
+     --no-motd               suppress daemon-mode MOTD (see manpage caveat)
+ -c, --checksum              skip based on checksum, not mod-time & size
+ -a, --archive               archive mode; equals -rlptgoD (no -H,-A,-X)
+     --no-OPTION             turn off an implied OPTION (e.g. --no-D)
+ -r, --recursive             recurse into directories
+ -R, --relative              use relative path names
+     --no-implied-dirs       don't send implied dirs with --relative
+ -b, --backup                make backups (see --suffix & --backup-dir)
+     --backup-dir=DIR        make backups into hierarchy based in DIR
+     --suffix=SUFFIX         set backup suffix (default ~ w/o --backup-dir)
+ -u, --update                skip files that are newer on the receiver
+     --inplace               update destination files in-place (SEE MAN PAGE)
+     --append                append data onto shorter files
+     --append-verify         like --append, but with old data in file checksum
+ -d, --dirs                  transfer directories without recursing
+ -l, --links                 copy symlinks as symlinks
+ -L, --copy-links            transform symlink into referent file/dir
+     --copy-unsafe-links     only "unsafe" symlinks are transformed
+     --safe-links            ignore symlinks that point outside the source tree
+     --munge-links           munge symlinks to make them safer (but unusable)
+ -k, --copy-dirlinks         transform symlink to a dir into referent dir
+ -K, --keep-dirlinks         treat symlinked dir on receiver as dir
+ -H, --hard-links            preserve hard links
+ -p, --perms                 preserve permissions
+ -E, --executability         preserve the file's executability
+     --chmod=CHMOD           affect file and/or directory permissions
+ -A, --acls                  preserve ACLs (implies --perms)
+ -X, --xattrs                preserve extended attributes
+ -o, --owner                 preserve owner (super-user only)
+ -g, --group                 preserve group
+     --devices               preserve device files (super-user only)
+     --specials              preserve special files
+ -D                          same as --devices --specials
+ -t, --times                 preserve modification times
+ -O, --omit-dir-times        omit directories from --times
+ -J, --omit-link-times       omit symlinks from --times
+     --super                 receiver attempts super-user activities
+     --fake-super            store/recover privileged attrs using xattrs
+ -S, --sparse                handle sparse files efficiently
+     --preallocate           allocate dest files before writing them
+ -n, --dry-run               perform a trial run with no changes made
+ -W, --whole-file            copy files whole (without delta-xfer algorithm)
+ -x, --one-file-system       don't cross filesystem boundaries
+ -B, --block-size=SIZE       force a fixed checksum block-size
+ -e, --rsh=COMMAND           specify the remote shell to use
+     --rsync-path=PROGRAM    specify the rsync to run on the remote machine
+     --existing              skip creating new files on receiver
+     --ignore-existing       skip updating files that already exist on receiver
+     --remove-source-files   sender removes synchronized files (non-dirs)
+     --del                   an alias for --delete-during
+     --delete                delete extraneous files from destination dirs
+     --delete-before         receiver deletes before transfer, not during
+     --delete-during         receiver deletes during the transfer
+     --delete-delay          find deletions during, delete after
+     --delete-after          receiver deletes after transfer, not during
+     --delete-excluded       also delete excluded files from destination dirs
+     --ignore-missing-args   ignore missing source args without error
+     --delete-missing-args   delete missing source args from destination
+     --ignore-errors         delete even if there are I/O errors
+     --force                 force deletion of directories even if not empty
+     --max-delete=NUM        don't delete more than NUM files
+     --max-size=SIZE         don't transfer any file larger than SIZE
+     --min-size=SIZE         don't transfer any file smaller than SIZE
+     --partial               keep partially transferred files
+     --partial-dir=DIR       put a partially transferred file into DIR
+     --delay-updates         put all updated files into place at transfer's end
+ -m, --prune-empty-dirs      prune empty directory chains from the file-list
+     --numeric-ids           don't map uid/gid values by user/group name
+     --usermap=STRING        custom username mapping
+     --groupmap=STRING       custom groupname mapping
+     --chown=USER:GROUP      simple username/groupname mapping
+     --timeout=SECONDS       set I/O timeout in seconds
+     --contimeout=SECONDS    set daemon connection timeout in seconds
+ -I, --ignore-times          don't skip files that match in size and mod-time
+ -M, --remote-option=OPTION  send OPTION to the remote side only
+     --size-only             skip files that match in size
+     --modify-window=NUM     compare mod-times with reduced accuracy
+ -T, --temp-dir=DIR          create temporary files in directory DIR
+ -y, --fuzzy                 find similar file for basis if no dest file
+     --compare-dest=DIR      also compare destination files relative to DIR
+     --copy-dest=DIR         ... and include copies of unchanged files
+     --link-dest=DIR         hardlink to files in DIR when unchanged
+ -z, --compress              compress file data during the transfer
+     --compress-level=NUM    explicitly set compression level
+     --skip-compress=LIST    skip compressing files with a suffix in LIST
+ -C, --cvs-exclude           auto-ignore files the same way CVS does
+ -f, --filter=RULE           add a file-filtering RULE
+ -F                          same as --filter='dir-merge /.rsync-filter'
+                             repeated: --filter='- .rsync-filter'
+     --exclude=PATTERN       exclude files matching PATTERN
+     --exclude-from=FILE     read exclude patterns from FILE
+     --include=PATTERN       don't exclude files matching PATTERN
+     --include-from=FILE     read include patterns from FILE
+     --files-from=FILE       read list of source-file names from FILE
+ -0, --from0                 all *-from/filter files are delimited by 0s
+ -s, --protect-args          no space-splitting; only wildcard special-chars
+     --address=ADDRESS       bind address for outgoing socket to daemon
+     --port=PORT             specify double-colon alternate port number
+     --sockopts=OPTIONS      specify custom TCP options
+     --blocking-io           use blocking I/O for the remote shell
+     --stats                 give some file-transfer stats
+ -8, --8-bit-output          leave high-bit chars unescaped in output
+ -h, --human-readable        output numbers in a human-readable format
+     --progress              show progress during transfer
+ -P                          same as --partial --progress
+ -i, --itemize-changes       output a change-summary for all updates
+     --out-format=FORMAT     output updates using the specified FORMAT
+     --log-file=FILE         log what we're doing to the specified FILE
+     --log-file-format=FMT   log updates using the specified FMT
+     --password-file=FILE    read daemon-access password from FILE
+     --list-only             list the files instead of copying them
+     --bwlimit=RATE          limit socket I/O bandwidth
+     --outbuf=N|L|B          set output buffering to None, Line, or Block
+     --write-batch=FILE      write a batched update to FILE
+     --only-write-batch=FILE like --write-batch but w/o updating destination
+     --read-batch=FILE       read a batched update from FILE
+     --protocol=NUM          force an older protocol version to be used
+     --iconv=CONVERT_SPEC    request charset conversion of filenames
+     --checksum-seed=NUM     set block/file checksum seed (advanced)
+     --noatime               do not alter atime when opening source files
+ -4, --ipv4                  prefer IPv4
+ -6, --ipv6                  prefer IPv6
+     --version               print version number
+(-h) --help                  show this help (-h is --help only if used alone)
+
+Use "rsync --daemon --help" to see the daemon-mode command-line options.
+Please see the rsync(1) and rsyncd.conf(5) man pages for full documentation.
+See http://rsync.samba.org/ for updates, bug reports, and answers
+rsync error: syntax or usage error (code 1) at main.c(1640) [Receiver=3.1.1]
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302[00m$ mkdir test
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302[00m$ cd test
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302/test[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302/test[00m$ cat > aa.txt
+rinu
+parvathy
+remya
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302/test[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302/test[00m$ rsty[K[Kync -av 0302/test/
+sending incremental file list
+rsync: change_dir "/home/student/ceccs18c50/cs232/0302/test//0302/test" failed: No such file or directory (2)
+
+sent 20 bytes  received 12 bytes  64.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1183) [sender=3.1.1]
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302/test[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302/test[00m$ rsyn[K[K[K[Krsync -a
+rsync  version 3.1.1  protocol version 31
+Copyright (C) 1996-2014 by Andrew Tridgell, Wayne Davison, and others.
+Web site: http://rsync.samba.org/
+Capabilities:
+    64-bit files, 64-bit inums, 64-bit timestamps, 64-bit long ints,
+    socketpairs, hardlinks, symlinks, IPv6, batchfiles, inplace,
+    append, ACLs, xattrs, iconv, symtimes, prealloc
+
+rsync comes with ABSOLUTELY NO WARRANTY.  This is free software, and you
+are welcome to redistribute it under certain conditions.  See the GNU
+General Public Licence for details.
+
+rsync is a file transfer program capable of efficient remote update
+via a fast differencing algorithm.
+
+Usage: rsync [OPTION]... SRC [SRC]... DEST
+  or   rsync [OPTION]... SRC [SRC]... [USER@]HOST:DEST
+  or   rsync [OPTION]... SRC [SRC]... [USER@]HOST::DEST
+  or   rsync [OPTION]... SRC [SRC]... rsync://[USER@]HOST[:PORT]/DEST
+  or   rsync [OPTION]... [USER@]HOST:SRC [DEST]
+  or   rsync [OPTION]... [USER@]HOST::SRC [DEST]
+  or   rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
+The ':' usages connect via remote shell, while '::' & 'rsync://' usages connect
+to an rsync daemon, and require SRC or DEST to start with a module name.
+
+Options
+ -v, --verbose               increase verbosity
+     --info=FLAGS            fine-grained informational verbosity
+     --debug=FLAGS           fine-grained debug verbosity
+     --msgs2stderr           special output handling for debugging
+ -q, --quiet                 suppress non-error messages
+     --no-motd               suppress daemon-mode MOTD (see manpage caveat)
+ -c, --checksum              skip based on checksum, not mod-time & size
+ -a, --archive               archive mode; equals -rlptgoD (no -H,-A,-X)
+     --no-OPTION             turn off an implied OPTION (e.g. --no-D)
+ -r, --recursive             recurse into directories
+ -R, --relative              use relative path names
+     --no-implied-dirs       don't send implied dirs with --relative
+ -b, --backup                make backups (see --suffix & --backup-dir)
+     --backup-dir=DIR        make backups into hierarchy based in DIR
+     --suffix=SUFFIX         set backup suffix (default ~ w/o --backup-dir)
+ -u, --update                skip files that are newer on the receiver
+     --inplace               update destination files in-place (SEE MAN PAGE)
+     --append                append data onto shorter files
+     --append-verify         like --append, but with old data in file checksum
+ -d, --dirs                  transfer directories without recursing
+ -l, --links                 copy symlinks as symlinks
+ -L, --copy-links            transform symlink into referent file/dir
+     --copy-unsafe-links     only "unsafe" symlinks are transformed
+     --safe-links            ignore symlinks that point outside the source tree
+     --munge-links           munge symlinks to make them safer (but unusable)
+ -k, --copy-dirlinks         transform symlink to a dir into referent dir
+ -K, --keep-dirlinks         treat symlinked dir on receiver as dir
+ -H, --hard-links            preserve hard links
+ -p, --perms                 preserve permissions
+ -E, --executability         preserve the file's executability
+     --chmod=CHMOD           affect file and/or directory permissions
+ -A, --acls                  preserve ACLs (implies --perms)
+ -X, --xattrs                preserve extended attributes
+ -o, --owner                 preserve owner (super-user only)
+ -g, --group                 preserve group
+     --devices               preserve device files (super-user only)
+     --specials              preserve special files
+ -D                          same as --devices --specials
+ -t, --times                 preserve modification times
+ -O, --omit-dir-times        omit directories from --times
+ -J, --omit-link-times       omit symlinks from --times
+     --super                 receiver attempts super-user activities
+     --fake-super            store/recover privileged attrs using xattrs
+ -S, --sparse                handle sparse files efficiently
+     --preallocate           allocate dest files before writing them
+ -n, --dry-run               perform a trial run with no changes made
+ -W, --whole-file            copy files whole (without delta-xfer algorithm)
+ -x, --one-file-system       don't cross filesystem boundaries
+ -B, --block-size=SIZE       force a fixed checksum block-size
+ -e, --rsh=COMMAND           specify the remote shell to use
+     --rsync-path=PROGRAM    specify the rsync to run on the remote machine
+     --existing              skip creating new files on receiver
+     --ignore-existing       skip updating files that already exist on receiver
+     --remove-source-files   sender removes synchronized files (non-dirs)
+     --del                   an alias for --delete-during
+     --delete                delete extraneous files from destination dirs
+     --delete-before         receiver deletes before transfer, not during
+     --delete-during         receiver deletes during the transfer
+     --delete-delay          find deletions during, delete after
+     --delete-after          receiver deletes after transfer, not during
+     --delete-excluded       also delete excluded files from destination dirs
+     --ignore-missing-args   ignore missing source args without error
+     --delete-missing-args   delete missing source args from destination
+     --ignore-errors         delete even if there are I/O errors
+     --force                 force deletion of directories even if not empty
+     --max-delete=NUM        don't delete more than NUM files
+     --max-size=SIZE         don't transfer any file larger than SIZE
+     --min-size=SIZE         don't transfer any file smaller than SIZE
+     --partial               keep partially transferred files
+     --partial-dir=DIR       put a partially transferred file into DIR
+     --delay-updates         put all updated files into place at transfer's end
+ -m, --prune-empty-dirs      prune empty directory chains from the file-list
+     --numeric-ids           don't map uid/gid values by user/group name
+     --usermap=STRING        custom username mapping
+     --groupmap=STRING       custom groupname mapping
+     --chown=USER:GROUP      simple username/groupname mapping
+     --timeout=SECONDS       set I/O timeout in seconds
+     --contimeout=SECONDS    set daemon connection timeout in seconds
+ -I, --ignore-times          don't skip files that match in size and mod-time
+ -M, --remote-option=OPTION  send OPTION to the remote side only
+     --size-only             skip files that match in size
+     --modify-window=NUM     compare mod-times with reduced accuracy
+ -T, --temp-dir=DIR          create temporary files in directory DIR
+ -y, --fuzzy                 find similar file for basis if no dest file
+     --compare-dest=DIR      also compare destination files relative to DIR
+     --copy-dest=DIR         ... and include copies of unchanged files
+     --link-dest=DIR         hardlink to files in DIR when unchanged
+ -z, --compress              compress file data during the transfer
+     --compress-level=NUM    explicitly set compression level
+     --skip-compress=LIST    skip compressing files with a suffix in LIST
+ -C, --cvs-exclude           auto-ignore files the same way CVS does
+ -f, --filter=RULE           add a file-filtering RULE
+ -F                          same as --filter='dir-merge /.rsync-filter'
+                             repeated: --filter='- .rsync-filter'
+     --exclude=PATTERN       exclude files matching PATTERN
+     --exclude-from=FILE     read exclude patterns from FILE
+     --include=PATTERN       don't exclude files matching PATTERN
+     --include-from=FILE     read include patterns from FILE
+     --files-from=FILE       read list of source-file names from FILE
+ -0, --from0                 all *-from/filter files are delimited by 0s
+ -s, --protect-args          no space-splitting; only wildcard special-chars
+     --address=ADDRESS       bind address for outgoing socket to daemon
+     --port=PORT             specify double-colon alternate port number
+     --sockopts=OPTIONS      specify custom TCP options
+     --blocking-io           use blocking I/O for the remote shell
+     --stats                 give some file-transfer stats
+ -8, --8-bit-output          leave high-bit chars unescaped in output
+ -h, --human-readable        output numbers in a human-readable format
+     --progress              show progress during transfer
+ -P                          same as --partial --progress
+ -i, --itemize-changes       output a change-summary for all updates
+     --out-format=FORMAT     output updates using the specified FORMAT
+     --log-file=FILE         log what we're doing to the specified FILE
+     --log-file-format=FMT   log updates using the specified FMT
+     --password-file=FILE    read daemon-access password from FILE
+     --list-only             list the files instead of copying them
+     --bwlimit=RATE          limit socket I/O bandwidth
+     --outbuf=N|L|B          set output buffering to None, Line, or Block
+     --write-batch=FILE      write a batched update to FILE
+     --only-write-batch=FILE like --write-batch but w/o updating destination
+     --read-batch=FILE       read a batched update from FILE
+     --protocol=NUM          force an older protocol version to be used
+     --iconv=CONVERT_SPEC    request charset conversion of filenames
+     --checksum-seed=NUM     set block/file checksum seed (advanced)
+     --noatime               do not alter atime when opening source files
+ -4, --ipv4                  prefer IPv4
+ -6, --ipv6                  prefer IPv6
+     --version               print version number
+(-h) --help                  show this help (-h is --help only if used alone)
+
+Use "rsync --daemon --help" to see the daemon-mode command-line options.
+Please see the rsync(1) and rsyncd.conf(5) man pages for full documentation.
+See http://rsync.samba.org/ for updates, bug reports, and answers
+rsync error: syntax or usage error (code 1) at main.c(1640) [Receiver=3.1.1]
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302/test[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302/test[00m$ rsync -av 0302/test/
+sending incremental file list
+rsync: change_dir "/home/student/ceccs18c50/cs232/0302/test//0302/test" failed: No such file or directory (2)
+
+sent 20 bytes  received 12 bytes  64.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1183) [sender=3.1.1]
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302/test[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302/test[00m$ rsync -av 0302/folder/
+sending incremental file list
+rsync: change_dir "/home/student/ceccs18c50/cs232/0302/test//0302/folder" failed: No such file or directory (2)
+
+sent 20 bytes  received 12 bytes  64.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1183) [sender=3.1.1]
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302/test[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302/test[00m$ rsync -avh[K[K[K[K[K[K[K[K[K[Kcd 0302
+bash: cd: 0302: No such file or directory
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302/test[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302/test[00m$ rsync -avh 0302/ test/
+sending incremental file list
+rsync: change_dir "/home/student/ceccs18c50/cs232/0302/test//0302" failed: No such file or directory (2)
+created directory test
+
+sent 20 bytes  received 39 bytes  118.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1183) [sender=3.1.1]
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302/test[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302/test[00m$ ls
+aa.txt  [0m[01;34mtest[0m
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302/test[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302/test[00m$ cd ..
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302[00m$ rsync -avh 0302/ test/
+sending incremental file list
+rsync: change_dir "/home/student/ceccs18c50/cs232/0302//0302" failed: No such file or directory (2)
+
+sent 20 bytes  received 12 bytes  64.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1183) [sender=3.1.1]
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302[00m$ ls
+abc.txt  [0m[01;34mtest[0m  work.txt
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302[00m$ sftp cs18c50@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c50@192.168.0.30's password: 
+Connected to 192.168.0.30.
+sftp> put aa.txt
+stat aa.txt: No such file or directory
+sftp> quit
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302[00m$ cat > bb.txt
+1
+8
+3
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302[00m$ sftp cs18c50@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c50@192.168.0.30's password: 
+Connected to 192.168.0.30.
+sftp> put bb.txt
+Uploading bb.txt to /home/cs18c50/bb.txt
+bb.txt                                          0%    0     0.0KB/s   --:-- ETAbb.txt                                        100%    6     0.0KB/s   00:00    
+sftp> lcd ..
+sftp> lpwd
+Local working directory: /home/student/ceccs18c50/cs232
+sftp> get report.txt
+File "/home/cs18c50/report.txt" not found.
+sftp> get bb.txt
+Fetching /home/cs18c50/bb.txt to bb.txt
+/home/cs18c50/bb.txt                            0%    0     0.0KB/s   --:-- ETA/home/cs18c50/bb.txt                          100%    6     0.0KB/s   00:00    
+sftp> rm bb[K[K[K[Kls
+0302                bb.txt              cs232               examples.desktop    
+sftp> rm bb.txt
+Removing /home/cs18c50/bb.txt
+sftp> ls
+0302                cs232               examples.desktop    
+sftp> quit
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302[00m$ ifconfig -a
+enp1s0    Link encap:Ethernet  HWaddr e0:d5:5e:07:61:3d  
+          inet addr:192.168.0.208  Bcast:192.168.1.255  Mask:255.255.254.0
+          inet6 addr: fe80::a8db:c203:fa3a:62b4/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:214334 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:61115 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:168304260 (168.3 MB)  TX bytes:4797809 (4.7 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:23620 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:23620 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:1564392 (1.5 MB)  TX bytes:1564392 (1.5 MB)
+
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302[00m$ route -n
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+169.254.0.0     0.0.0.0         255.255.0.0     U     1000   0        0 enp1s0
+192.168.0.0     0.0.0.0         255.255.254.0   U     100    0        0 enp1s0
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302[00m$ route add default gw 192.182.[K[K[K[K168.0 .2
+SIOCADDRT: Operation not permitted
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302[00m$ ping 192.168.0.1
+PING 192.168.0.1 (192.168.0.1) 56(84) bytes of data.
+64 bytes from 192.168.0.1: icmp_seq=1 ttl=64 time=10.1 ms
+64 bytes from 192.168.0.1: icmp_seq=2 ttl=64 time=2.71 ms
+64 bytes from 192.168.0.1: icmp_seq=3 ttl=64 time=2.80 ms
+64 bytes from 192.168.0.1: icmp_seq=4 ttl=64 time=2.73 ms
+64 bytes from 192.168.0.1: icmp_seq=5 ttl=64 time=2.48 ms
+64 bytes from 192.168.0.1: icmp_seq=6 ttl=64 time=2.61 ms
+64 bytes from 192.168.0.1: icmp_seq=7 ttl=64 time=2.66 ms
+64 bytes from 192.168.0.1: icmp_seq=8 ttl=64 time=2.77 ms
+64 bytes from 192.168.0.1: icmp_seq=9 ttl=64 time=2.58 ms
+64 bytes from 192.168.0.1: icmp_seq=10 ttl=64 time=2.51 ms
+64 bytes from 192.168.0.1: icmp_seq=11 ttl=64 time=2.65 ms
+64 bytes from 192.168.0.1: icmp_seq=12 ttl=64 time=2.71 ms
+64 bytes from 192.168.0.1: icmp_seq=13 ttl=64 time=2.86 ms
+64 bytes from 192.168.0.1: icmp_seq=14 ttl=64 time=2.75 ms
+64 bytes from 192.168.0.1: icmp_seq=15 ttl=64 time=2.69 ms
+64 bytes from 192.168.0.1: icmp_seq=16 ttl=64 time=3.00 ms
+64 bytes from 192.168.0.1: icmp_seq=17 ttl=64 time=2.69 ms
+64 bytes from 192.168.0.1: icmp_seq=18 ttl=64 time=2.74 ms
+64 bytes from 192.168.0.1: icmp_seq=19 ttl=64 time=2.83 ms
+64 bytes from 192.168.0.1: icmp_seq=20 ttl=64 time=2.69 ms
+64 bytes from 192.168.0.1: icmp_seq=21 ttl=64 time=2.85 ms
+64 bytes from 192.168.0.1: icmp_seq=22 ttl=64 time=2.66 ms
+64 bytes from 192.168.0.1: icmp_seq=23 ttl=64 time=2.84 ms
+64 bytes from 192.168.0.1: icmp_seq=24 ttl=64 time=2.58 ms
+64 bytes from 192.168.0.1: icmp_seq=25 ttl=64 time=2.68 ms
+64 bytes from 192.168.0.1: icmp_seq=26 ttl=64 time=2.75 ms
+64 bytes from 192.168.0.1: icmp_seq=27 ttl=64 time=2.86 ms
+64 bytes from 192.168.0.1: icmp_seq=28 ttl=64 time=3.16 ms
+64 bytes from 192.168.0.1: icmp_seq=29 ttl=64 time=3.22 ms
+64 bytes from 192.168.0.1: icmp_seq=30 ttl=64 time=2.63 ms
+64 bytes from 192.168.0.1: icmp_seq=31 ttl=64 time=2.62 ms
+64 bytes from 192.168.0.1: icmp_seq=32 ttl=64 time=2.64 ms
+64 bytes from 192.168.0.1: icmp_seq=33 ttl=64 time=2.67 ms
+64 bytes from 192.168.0.1: icmp_seq=34 ttl=64 time=3.00 ms
+64 bytes from 192.168.0.1: icmp_seq=35 ttl=64 time=2.62 ms
+64 bytes from 192.168.0.1: icmp_seq=36 ttl=64 time=23.1 ms
+64 bytes from 192.168.0.1: icmp_seq=37 ttl=64 time=2.70 ms
+64 bytes from 192.168.0.1: icmp_seq=38 ttl=64 time=2.66 ms
+64 bytes from 192.168.0.1: icmp_seq=39 ttl=64 time=2.65 ms
+64 bytes from 192.168.0.1: icmp_seq=40 ttl=64 time=2.61 ms
+64 bytes from 192.168.0.1: icmp_seq=41 ttl=64 time=2.51 ms
+64 bytes from 192.168.0.1: icmp_seq=42 ttl=64 time=2.66 ms
+64 bytes from 192.168.0.1: icmp_seq=43 ttl=64 time=2.65 ms
+64 bytes from 192.168.0.1: icmp_seq=44 ttl=64 time=2.72 ms
+64 bytes from 192.168.0.1: icmp_seq=45 ttl=64 time=8.21 ms
+64 bytes from 192.168.0.1: icmp_seq=46 ttl=64 time=2.92 ms
+64 bytes from 192.168.0.1: icmp_seq=47 ttl=64 time=2.74 ms
+64 bytes from 192.168.0.1: icmp_seq=48 ttl=64 time=2.71 ms
+64 bytes from 192.168.0.1: icmp_seq=49 ttl=64 time=2.68 ms
+64 bytes from 192.168.0.1: icmp_seq=50 ttl=64 time=2.65 ms
+64 bytes from 192.168.0.1: icmp_seq=51 ttl=64 time=10.6 ms
+64 bytes from 192.168.0.1: icmp_seq=52 ttl=64 time=2.72 ms
+64 bytes from 192.168.0.1: icmp_seq=53 ttl=64 time=2.68 ms
+64 bytes from 192.168.0.1: icmp_seq=54 ttl=64 time=2.65 ms
+64 bytes from 192.168.0.1: icmp_seq=55 ttl=64 time=13.3 ms
+64 bytes from 192.168.0.1: icmp_seq=56 ttl=64 time=8.93 ms
+64 bytes from 192.168.0.1: icmp_seq=57 ttl=64 time=8.62 ms
+64 bytes from 192.168.0.1: icmp_seq=58 ttl=64 time=2.72 ms
+64 bytes from 192.168.0.1: icmp_seq=59 ttl=64 time=2.53 ms
+64 bytes from 192.168.0.1: icmp_seq=60 ttl=64 time=2.40 ms
+64 bytes from 192.168.0.1: icmp_seq=61 ttl=64 time=2.47 ms
+64 bytes from 192.168.0.1: icmp_seq=62 ttl=64 time=2.54 ms
+64 bytes from 192.168.0.1: icmp_seq=63 ttl=64 time=2.65 ms
+64 bytes from 192.168.0.1: icmp_seq=64 ttl=64 time=2.72 ms
+64 bytes from 192.168.0.1: icmp_seq=65 ttl=64 time=3.16 ms
+64 bytes from 192.168.0.1: icmp_seq=66 ttl=64 time=2.49 ms
+64 bytes from 192.168.0.1: icmp_seq=67 ttl=64 time=3.39 ms
+64 bytes from 192.168.0.1: icmp_seq=68 ttl=64 time=2.64 ms
+64 bytes from 192.168.0.1: icmp_seq=69 ttl=64 time=2.80 ms
+64 bytes from 192.168.0.1: icmp_seq=70 ttl=64 time=2.71 ms
+64 bytes from 192.168.0.1: icmp_seq=71 ttl=64 time=2.62 ms
+64 bytes from 192.168.0.1: icmp_seq=72 ttl=64 time=2.87 ms
+64 bytes from 192.168.0.1: icmp_seq=73 ttl=64 time=2.77 ms
+64 bytes from 192.168.0.1: icmp_seq=74 ttl=64 time=2.58 ms
+64 bytes from 192.168.0.1: icmp_seq=75 ttl=64 time=2.55 ms
+64 bytes from 192.168.0.1: icmp_seq=76 ttl=64 time=2.48 ms
+64 bytes from 192.168.0.1: icmp_seq=77 ttl=64 time=3.05 ms
+64 bytes from 192.168.0.1: icmp_seq=78 ttl=64 time=2.64 ms
+64 bytes from 192.168.0.1: icmp_seq=79 ttl=64 time=2.66 ms
+64 bytes from 192.168.0.1: icmp_seq=80 ttl=64 time=2.65 ms
+64 bytes from 192.168.0.1: icmp_seq=81 ttl=64 time=2.73 ms
+64 bytes from 192.168.0.1: icmp_seq=82 ttl=64 time=2.70 ms
+64 bytes from 192.168.0.1: icmp_seq=83 ttl=64 time=2.67 ms
+64 bytes from 192.168.0.1: icmp_seq=84 ttl=64 time=2.74 ms
+64 bytes from 192.168.0.1: icmp_seq=85 ttl=64 time=5.83 ms
+64 bytes from 192.168.0.1: icmp_seq=86 ttl=64 time=2.88 ms
+64 bytes from 192.168.0.1: icmp_seq=87 ttl=64 time=2.70 ms
+64 bytes from 192.168.0.1: icmp_seq=88 ttl=64 time=2.69 ms
+64 bytes from 192.168.0.1: icmp_seq=89 ttl=64 time=4.69 ms
+64 bytes from 192.168.0.1: icmp_seq=90 ttl=64 time=4.43 ms
+64 bytes from 192.168.0.1: icmp_seq=91 ttl=64 time=15.6 ms
+64 bytes from 192.168.0.1: icmp_seq=92 ttl=64 time=3.89 ms
+64 bytes from 192.168.0.1: icmp_seq=93 ttl=64 time=3.03 ms
+64 bytes from 192.168.0.1: icmp_seq=94 ttl=64 time=2.59 ms
+64 bytes from 192.168.0.1: icmp_seq=95 ttl=64 time=2.50 ms
+64 bytes from 192.168.0.1: icmp_seq=96 ttl=64 time=2.59 ms
+64 bytes from 192.168.0.1: icmp_seq=97 ttl=64 time=2.66 ms
+64 bytes from 192.168.0.1: icmp_seq=98 ttl=64 time=2.77 ms
+64 bytes from 192.168.0.1: icmp_seq=99 ttl=64 time=2.60 ms
+64 bytes from 192.168.0.1: icmp_seq=100 ttl=64 time=2.74 ms
+64 bytes from 192.168.0.1: icmp_seq=101 ttl=64 time=2.52 ms
+64 bytes from 192.168.0.1: icmp_seq=102 ttl=64 time=2.64 ms
+64 bytes from 192.168.0.1: icmp_seq=103 ttl=64 time=2.84 ms
+64 bytes from 192.168.0.1: icmp_seq=104 ttl=64 time=2.57 ms
+64 bytes from 192.168.0.1: icmp_seq=105 ttl=64 time=3.49 ms
+64 bytes from 192.168.0.1: icmp_seq=106 ttl=64 time=2.67 ms
+64 bytes from 192.168.0.1: icmp_seq=107 ttl=64 time=2.56 ms
+64 bytes from 192.168.0.1: icmp_seq=108 ttl=64 time=2.75 ms
+64 bytes from 192.168.0.1: icmp_seq=109 ttl=64 time=2.51 ms
+64 bytes from 192.168.0.1: icmp_seq=110 ttl=64 time=2.69 ms
+64 bytes from 192.168.0.1: icmp_seq=111 ttl=64 time=2.69 ms
+64 bytes from 192.168.0.1: icmp_seq=112 ttl=64 time=2.78 ms
+64 bytes from 192.168.0.1: icmp_seq=113 ttl=64 time=3.07 ms
+64 bytes from 192.168.0.1: icmp_seq=114 ttl=64 time=5.01 ms
+64 bytes from 192.168.0.1: icmp_seq=115 ttl=64 time=21.9 ms
+64 bytes from 192.168.0.1: icmp_seq=116 ttl=64 time=2.98 ms
+64 bytes from 192.168.0.1: icmp_seq=117 ttl=64 time=2.66 ms
+64 bytes from 192.168.0.1: icmp_seq=118 ttl=64 time=2.93 ms
+64 bytes from 192.168.0.1: icmp_seq=119 ttl=64 time=2.63 ms
+64 bytes from 192.168.0.1: icmp_seq=120 ttl=64 time=2.66 ms
+64 bytes from 192.168.0.1: icmp_seq=121 ttl=64 time=2.88 ms
+64 bytes from 192.168.0.1: icmp_seq=122 ttl=64 time=2.96 ms
+64 bytes from 192.168.0.1: icmp_seq=123 ttl=64 time=2.46 ms
+64 bytes from 192.168.0.1: icmp_seq=124 ttl=64 time=2.69 ms
+64 bytes from 192.168.0.1: icmp_seq=125 ttl=64 time=2.62 ms
+64 bytes from 192.168.0.1: icmp_seq=126 ttl=64 time=2.89 ms
+64 bytes from 192.168.0.1: icmp_seq=127 ttl=64 time=2.68 ms
+64 bytes from 192.168.0.1: icmp_seq=128 ttl=64 time=2.69 ms
+64 bytes from 192.168.0.1: icmp_seq=129 ttl=64 time=2.69 ms
+64 bytes from 192.168.0.1: icmp_seq=130 ttl=64 time=2.71 ms
+64 bytes from 192.168.0.1: icmp_seq=131 ttl=64 time=2.88 ms
+64 bytes from 192.168.0.1: icmp_seq=132 ttl=64 time=2.61 ms
+64 bytes from 192.168.0.1: icmp_seq=133 ttl=64 time=2.70 ms
+64 bytes from 192.168.0.1: icmp_seq=134 ttl=64 time=2.74 ms
+64 bytes from 192.168.0.1: icmp_seq=135 ttl=64 time=4.46 ms
+64 bytes from 192.168.0.1: icmp_seq=136 ttl=64 time=2.93 ms
+64 bytes from 192.168.0.1: icmp_seq=137 ttl=64 time=2.47 ms
+64 bytes from 192.168.0.1: icmp_seq=138 ttl=64 time=2.71 ms
+64 bytes from 192.168.0.1: icmp_seq=139 ttl=64 time=3.66 ms
+64 bytes from 192.168.0.1: icmp_seq=140 ttl=64 time=2.75 ms
+64 bytes from 192.168.0.1: icmp_seq=141 ttl=64 time=2.72 ms
+64 bytes from 192.168.0.1: icmp_seq=142 ttl=64 time=2.71 ms
+64 bytes from 192.168.0.1: icmp_seq=143 ttl=64 time=2.76 ms
+64 bytes from 192.168.0.1: icmp_seq=144 ttl=64 time=2.70 ms
+64 bytes from 192.168.0.1: icmp_seq=145 ttl=64 time=2.72 ms
+64 bytes from 192.168.0.1: icmp_seq=146 ttl=64 time=14.0 ms
+64 bytes from 192.168.0.1: icmp_seq=147 ttl=64 time=2.64 ms
+64 bytes from 192.168.0.1: icmp_seq=148 ttl=64 time=2.69 ms
+64 bytes from 192.168.0.1: icmp_seq=149 ttl=64 time=2.66 ms
+64 bytes from 192.168.0.1: icmp_seq=150 ttl=64 time=17.9 ms
+64 bytes from 192.168.0.1: icmp_seq=151 ttl=64 time=2.75 ms
+64 bytes from 192.168.0.1: icmp_seq=152 ttl=64 time=2.71 ms
+64 bytes from 192.168.0.1: icmp_seq=153 ttl=64 time=2.69 ms
+64 bytes from 192.168.0.1: icmp_seq=154 ttl=64 time=2.71 ms
+64 bytes from 192.168.0.1: icmp_seq=155 ttl=64 time=2.65 ms
+64 bytes from 192.168.0.1: icmp_seq=156 ttl=64 time=2.67 ms
+64 bytes from 192.168.0.1: icmp_seq=157 ttl=64 time=2.80 ms
+64 bytes from 192.168.0.1: icmp_seq=158 ttl=64 time=2.71 ms
+64 bytes from 192.168.0.1: icmp_seq=159 ttl=64 time=2.63 ms
+64 bytes from 192.168.0.1: icmp_seq=160 ttl=64 time=2.69 ms
+64 bytes from 192.168.0.1: icmp_seq=161 ttl=64 time=2.76 ms
+64 bytes from 192.168.0.1: icmp_seq=162 ttl=64 time=2.85 ms
+64 bytes from 192.168.0.1: icmp_seq=163 ttl=64 time=2.70 ms
+64 bytes from 192.168.0.1: icmp_seq=164 ttl=64 time=2.73 ms
+64 bytes from 192.168.0.1: icmp_seq=165 ttl=64 time=2.75 ms
+64 bytes from 192.168.0.1: icmp_seq=166 ttl=64 time=2.83 ms
+64 bytes from 192.168.0.1: icmp_seq=167 ttl=64 time=2.95 ms
+64 bytes from 192.168.0.1: icmp_seq=168 ttl=64 time=2.65 ms
+64 bytes from 192.168.0.1: icmp_seq=169 ttl=64 time=2.67 ms
+64 bytes from 192.168.0.1: icmp_seq=170 ttl=64 time=2.65 ms
+64 bytes from 192.168.0.1: icmp_seq=171 ttl=64 time=2.68 ms
+64 bytes from 192.168.0.1: icmp_seq=172 ttl=64 time=2.67 ms
+64 bytes from 192.168.0.1: icmp_seq=173 ttl=64 time=3.83 ms
+64 bytes from 192.168.0.1: icmp_seq=174 ttl=64 time=2.72 ms
+64 bytes from 192.168.0.1: icmp_seq=175 ttl=64 time=2.75 ms
+64 bytes from 192.168.0.1: icmp_seq=176 ttl=64 time=2.66 ms
+64 bytes from 192.168.0.1: icmp_seq=177 ttl=64 time=2.91 ms
+64 bytes from 192.168.0.1: icmp_seq=178 ttl=64 time=21.8 ms
+64 bytes from 192.168.0.1: icmp_seq=179 ttl=64 time=2.69 ms
+64 bytes from 192.168.0.1: icmp_seq=180 ttl=64 time=2.69 ms
+64 bytes from 192.168.0.1: icmp_seq=181 ttl=64 time=2.70 ms
+64 bytes from 192.168.0.1: icmp_seq=182 ttl=64 time=2.75 ms
+64 bytes from 192.168.0.1: icmp_seq=183 ttl=64 time=2.75 ms
+64 bytes from 192.168.0.1: icmp_seq=184 ttl=64 time=2.68 ms
+64 bytes from 192.168.0.1: icmp_seq=185 ttl=64 time=2.67 ms
+64 bytes from 192.168.0.1: icmp_seq=186 ttl=64 time=2.64 ms
+64 bytes from 192.168.0.1: icmp_seq=187 ttl=64 time=2.74 ms
+64 bytes from 192.168.0.1: icmp_seq=188 ttl=64 time=2.72 ms
+64 bytes from 192.168.0.1: icmp_seq=189 ttl=64 time=2.69 ms
+64 bytes from 192.168.0.1: icmp_seq=190 ttl=64 time=2.69 ms
+64 bytes from 192.168.0.1: icmp_seq=191 ttl=64 time=2.71 ms
+64 bytes from 192.168.0.1: icmp_seq=192 ttl=64 time=2.68 ms
+64 bytes from 192.168.0.1: icmp_seq=193 ttl=64 time=2.71 ms
+64 bytes from 192.168.0.1: icmp_seq=194 ttl=64 time=2.68 ms
+64 bytes from 192.168.0.1: icmp_seq=195 ttl=64 time=2.75 ms
+64 bytes from 192.168.0.1: icmp_seq=196 ttl=64 time=2.65 ms
+64 bytes from 192.168.0.1: icmp_seq=197 ttl=64 time=2.71 ms
+64 bytes from 192.168.0.1: icmp_seq=198 ttl=64 time=2.72 ms
+64 bytes from 192.168.0.1: icmp_seq=199 ttl=64 time=2.65 ms
+64 bytes from 192.168.0.1: icmp_seq=200 ttl=64 time=2.87 ms
+64 bytes from 192.168.0.1: icmp_seq=201 ttl=64 time=2.62 ms
+64 bytes from 192.168.0.1: icmp_seq=202 ttl=64 time=2.73 ms
+64 bytes from 192.168.0.1: icmp_seq=203 ttl=64 time=2.68 ms
+64 bytes from 192.168.0.1: icmp_seq=204 ttl=64 time=2.61 ms
+64 bytes from 192.168.0.1: icmp_seq=205 ttl=64 time=2.66 ms
+64 bytes from 192.168.0.1: icmp_seq=206 ttl=64 time=2.72 ms
+64 bytes from 192.168.0.1: icmp_seq=207 ttl=64 time=2.89 ms
+64 bytes from 192.168.0.1: icmp_seq=208 ttl=64 time=2.69 ms
+64 bytes from 192.168.0.1: icmp_seq=209 ttl=64 time=2.82 ms
+64 bytes from 192.168.0.1: icmp_seq=210 ttl=64 time=17.7 ms
+64 bytes from 192.168.0.1: icmp_seq=211 ttl=64 time=2.53 ms
+64 bytes from 192.168.0.1: icmp_seq=212 ttl=64 time=2.77 ms
+64 bytes from 192.168.0.1: icmp_seq=213 ttl=64 time=2.82 ms
+64 bytes from 192.168.0.1: icmp_seq=214 ttl=64 time=2.49 ms
+64 bytes from 192.168.0.1: icmp_seq=215 ttl=64 time=2.43 ms
+64 bytes from 192.168.0.1: icmp_seq=216 ttl=64 time=2.52 ms
+64 bytes from 192.168.0.1: icmp_seq=217 ttl=64 time=2.71 ms
+64 bytes from 192.168.0.1: icmp_seq=218 ttl=64 time=2.63 ms
+64 bytes from 192.168.0.1: icmp_seq=219 ttl=64 time=2.65 ms
+64 bytes from 192.168.0.1: icmp_seq=220 ttl=64 time=2.61 ms
+64 bytes from 192.168.0.1: icmp_seq=221 ttl=64 time=2.63 ms
+64 bytes from 192.168.0.1: icmp_seq=222 ttl=64 time=2.61 ms
+64 bytes from 192.168.0.1: icmp_seq=223 ttl=64 time=2.62 ms
+64 bytes from 192.168.0.1: icmp_seq=224 ttl=64 time=2.69 ms
+64 bytes from 192.168.0.1: icmp_seq=225 ttl=64 time=2.62 ms
+64 bytes from 192.168.0.1: icmp_seq=226 ttl=64 time=2.63 ms
+64 bytes from 192.168.0.1: icmp_seq=227 ttl=64 time=2.63 ms
+64 bytes from 192.168.0.1: icmp_seq=228 ttl=64 time=2.59 ms
+64 bytes from 192.168.0.1: icmp_seq=229 ttl=64 time=2.58 ms
+64 bytes from 192.168.0.1: icmp_seq=230 ttl=64 time=2.47 ms
+64 bytes from 192.168.0.1: icmp_seq=231 ttl=64 time=2.56 ms
+64 bytes from 192.168.0.1: icmp_seq=232 ttl=64 time=2.64 ms
+64 bytes from 192.168.0.1: icmp_seq=233 ttl=64 time=2.50 ms
+64 bytes from 192.168.0.1: icmp_seq=234 ttl=64 time=2.86 ms
+64 bytes from 192.168.0.1: icmp_seq=235 ttl=64 time=2.63 ms
+64 bytes from 192.168.0.1: icmp_seq=236 ttl=64 time=2.53 ms
+64 bytes from 192.168.0.1: icmp_seq=237 ttl=64 time=2.60 ms
+64 bytes from 192.168.0.1: icmp_seq=238 ttl=64 time=2.54 ms
+64 bytes from 192.168.0.1: icmp_seq=239 ttl=64 time=2.61 ms
+64 bytes from 192.168.0.1: icmp_seq=240 ttl=64 time=2.74 ms
+64 bytes from 192.168.0.1: icmp_seq=241 ttl=64 time=13.2 ms
+64 bytes from 192.168.0.1: icmp_seq=242 ttl=64 time=18.1 ms
+64 bytes from 192.168.0.1: icmp_seq=243 ttl=64 time=19.5 ms
+64 bytes from 192.168.0.1: icmp_seq=244 ttl=64 time=2.66 ms
+64 bytes from 192.168.0.1: icmp_seq=245 ttl=64 time=2.67 ms
+64 bytes from 192.168.0.1: icmp_seq=246 ttl=64 time=2.63 ms
+64 bytes from 192.168.0.1: icmp_seq=247 ttl=64 time=2.49 ms
+64 bytes from 192.168.0.1: icmp_seq=248 ttl=64 time=2.63 ms
+64 bytes from 192.168.0.1: icmp_seq=249 ttl=64 time=2.53 ms
+64 bytes from 192.168.0.1: icmp_seq=250 ttl=64 time=3.56 ms
+64 bytes from 192.168.0.1: icmp_seq=251 ttl=64 time=2.55 ms
+64 bytes from 192.168.0.1: icmp_seq=252 ttl=64 time=2.93 ms
+^C
+--- 192.168.0.1 ping statistics ---
+252 packets transmitted, 252 received, 0% packet loss, time 251458ms
+rtt min/avg/max/mdev = 2.402/3.560/23.174/3.291 ms
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302[00m$ cat /etc/resolc[Kv.conf
+# Dynamic resolv.conf(5) file for glibc resolver(3) generated by resolvconf(8)
+#     DO NOT EDIT THIS FILE BY HAND -- YOUR CHANGES WILL BE OVERWRITTEN
+nameserver 127.0.1.1
+search example.org
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302[00m$ echo "nameserver 1.1.1.1">>res olc[Kv.conf
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302[00m$ ls
+abc.txt  bb.txt  resolv.conf  [0m[01;34mtest[0m  work.txt
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0302[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0302[00m$ exit
+exit
+
+Script done on Monday 03 February 2020 10:31:12 AM IST

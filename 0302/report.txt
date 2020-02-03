@@ -1,0 +1,83 @@
+CEC CS 18 C50
+Rinu Elisabath Mathew
+
+--------------------------------
+#1: ssh,rsync,scp
+---------------------------------
+Input
+
+  1. ssh cs18c50@192.168.0.30
+  2. scp abc.txt cs18c50@192.168.0.30:ddmm
+  3. rsync -a
+  4. rsync -avh 0302/ test/  
+  
+
+---------------------------------
+
+Output
+ 
+1. ssh   # connects to host 192.168.0.30
+2. scp   # uploads abc.txt to ddmm in the host 192.168.0.30 
+3.rsync -avh 0302/ test/  # sync the files in 0302 and test directories
+
+-------------------------------------
+-------------------------------------
+#2:FTP Usage
+
+-------------------------------
+Input 
+
+  1. sftp cs18c50@192.168.0.30
+  2. put bb.txt
+  3. lcd ..
+  4. lpwd
+  5. get bb.txt
+  6. rm bb.txt
+
+-------------------------------
+
+Output
+  
+
+1. sftp  # establishes connection to 192.168.0.30
+2. put   # uploads file 
+3. lcd .. # change local directory
+4. lpwd   # displays local working directory
+4.  get   # copies file in cs18c50 from 192.168.0.30
+5. rm     # removes file
+
+
+---------------------------------
+
+----------------------------------
+#3:Networking
+
+
+-----------------------------
+Input
+  
+
+  1. ifconfig -a
+  2. route -n
+  3. route add default gw 192.168.0.2
+  4. ping 192.168.0.1
+  5. cat /etc/resolv.conf
+  6. echo "nameserver 1.1.1.1" >> resolv.conf 
+  
+--------------------------------
+
+Output
+ 
+
+1. ifconfig -a    # displays available networks
+2. route -n       # displays kernel IP routing table
+3. route add default gw 192.168.0.2  # operation not permitted, provides default gateway
+4. ping 192.168  #assess the time taken to send and receive a response from the network
+5. echo "nameserver 1.1.1.1" >> resolv.conf  # adds to system resolver configuration
+
+
+----------------------------------------------------------------------
+ 
+
+
+
