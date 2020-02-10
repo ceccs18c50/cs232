@@ -1,0 +1,35 @@
+CEC CS 18 C50
+Rinu Elisabath Mathew
+
+--------------------------------
+#1: SCRIPTING TASK
+---------------------------------
+
+
+
+Input: 
+Downloaded result_CHN.pdf
+
+converted to text file # pdftotext -layout result_CHN.pdf result_CHN.txt
+
+separated results of CS branch # grep "CHN18CS" 
+
+created text file student_list.txt  # cat > student_list.txt
+
+calculated cgpa # awk
+
+--------------------------------
+Output: 
+
+output file:
+
+  cgpa.txt
+  
+# Displays register number, name, cgpa for those who passed all subjects
+ 
+  and no. of subjects failed for others
+
+
+
+
+
