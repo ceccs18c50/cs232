@@ -1,0 +1,587 @@
+Script started on Monday 02 March 2020 08:59:52 AM IST
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0203[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0203[00m$ sudo apt -get install vsftpd
+[sudo] password for student: 
+Sorry, try again.
+[sudo] password for student: 
+student is not in the sudoers file.  This incident will be reported.
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/0203[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/0203[00m$ su admin1
+Password: 
+]0;admin1@ceclab2-H110M-S2: /home/student/ceccs18c50/cs232/0203[01;32madmin1@ceclab2-H110M-S2[00m:[01;34m/home/student/ceccs18c50/cs232/0203[00m$ sudo apt -get insta 
+ll vsftpd
+[sudo] password for admin1: 
+E: Command line option 'g' [from -get] is not understood in combination with the other options.
+]0;admin1@ceclab2-H110M-S2: /home/student/ceccs18c50/cs232/0203[01;32madmin1@ceclab2-H110M-S2[00m:[01;34m/home/student/ceccs18c50/cs232/0203[00m$ sudo apt -get insta 
+ll vsftpd
+E: Command line option 'g' [from -get] is not understood in combination with the other options.
+]0;admin1@ceclab2-H110M-S2: /home/student/ceccs18c50/cs232/0203[01;32madmin1@ceclab2-H110M-S2[00m:[01;34m/home/student/ceccs18c50/cs232/0203[00m$ sudo apt [K-get instal 
+l vsftpd
+
+Reading package lists... 0%
+
+Reading package lists... 100%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree       
+
+
+Reading state information... 0%
+
+Reading state information... 0%
+
+Reading state information... Done
+
+The following package was automatically installed and is no longer required:
+  snapd-login-service
+Use 'sudo apt autoremove' to remove it.
+The following NEW packages will be installed:
+  vsftpd
+0 upgraded, 1 newly installed, 0 to remove and 15 not upgraded.
+Need to get 115 kB of archives.
+After this operation, 336 kB of additional disk space will be used.
+
+0% [Working]
+            
+Get:1 http://in.archive.ubuntu.com/ubuntu xenial/main amd64 vsftpd amd64 3.0.3-3ubuntu2 [115 kB]
+
+4% [1 vsftpd 5,410 B/115 kB 5%]
+                               
+100% [Working]
+              
+Fetched 115 kB in 0s (8,532 kB/s)
+Preconfiguring packages ...
+Selecting previously unselected package vsftpd.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 223248 files and directories currently installed.)
+Preparing to unpack .../vsftpd_3.0.3-3ubuntu2_amd64.deb ...
+Unpacking vsftpd (3.0.3-3ubuntu2) ...
+Processing triggers for systemd (229-4ubuntu21.27) ...
+Processing triggers for ureadahead (0.100.0-19.1) ...
+ureadahead will be reprofiled on next reboot
+Processing triggers for man-db (2.7.5-1) ...
+Setting up vsftpd (3.0.3-3ubuntu2) ...
+Processing triggers for systemd (229-4ubuntu21.27) ...
+Processing triggers for ureadahead (0.100.0-19.1) ...
+]0;admin1@ceclab2-H110M-S2: /home/student/ceccs18c50/cs232/0203[01;32madmin1@ceclab2-H110M-S2[00m:[01;34m/home/student/ceccs18c50/cs232/0203[00m$ sudo apt-get install
+l vsftpd
+
+Reading package lists... 0%
+
+Reading package lists... 100%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree       
+
+
+Reading state information... 0%
+
+Reading state information... 0%
+
+Reading state information... Done
+
+vsftpd is already the newest version (3.0.3-3ubuntu2).
+The following package was automatically installed and is no longer required:
+  snapd-login-service
+Use 'sudo apt autoremove' to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 15 not upgraded.
+]0;admin1@ceclab2-H110M-S2: /home/student/ceccs18c50/cs232/0203[01;32madmin1@ceclab2-H110M-S2[00m:[01;34m/home/student/ceccs18c50/cs232/0203[00m$ sudo /etc/vs[K[K[K[K[K[K[K[K[K[K[K[Kgeit [K[K[Kdit /[K[K[K[K[K[K[Ksudo gedit /etc/vsf 
+tpd.conf
+
+(gedit:4487): Gtk-WARNING **: Calling Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+
+** (gedit:4487): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-spell-enabled not supported
+
+** (gedit:4487): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:4487): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+]0;admin1@ceclab2-H110M-S2: /home/student/ceccs18c50/cs232/0203[01;32madmin1@ceclab2-H110M-S2[00m:[01;34m/home/student/ceccs18c50/cs232/0203[00m$ ifconfif
+No command 'ifconfif' found, did you mean:
+ Command 'ifconfig' from package 'net-tools' (main)
+ifconfif: command not found
+]0;admin1@ceclab2-H110M-S2: /home/student/ceccs18c50/cs232/0203[01;32madmin1@ceclab2-H110M-S2[00m:[01;34m/home/student/ceccs18c50/cs232/0203[00m$ ifconfig
+enp1s0    Link encap:Ethernet  HWaddr e0:d5:5e:07:61:3d  
+          inet addr:192.168.0.90  Bcast:192.168.1.255  Mask:255.255.254.0
+          inet6 addr: fe80::a8db:c203:fa3a:62b4/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:26986 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:5687 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:13434436 (13.4 MB)  TX bytes:533041 (533.0 KB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:388 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:388 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:29224 (29.2 KB)  TX bytes:29224 (29.2 KB)
+
+]0;admin1@ceclab2-H110M-S2: /home/student/ceccs18c50/cs232/0203[01;32madmin1@ceclab2-H110M-S2[00m:[01;34m/home/student/ceccs18c50/cs232/0203[00m$ ifconfigfsudo gedit /etc/vsft
+tpd.conf
+
+** (gedit:4602): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+]0;admin1@ceclab2-H110M-S2: /home/student/ceccs18c50/cs232/0203[01;32madmin1@ceclab2-H110M-S2[00m:[01;34m/home/student/ceccs18c50/cs232/0203[00m$ sudo gedit /etc/vsft
+tpd.conf[A
+]0;admin1@ceclab2-H110M-S2: /home/student/ceccs18c50/cs232/0203[01;32madmin1@ceclab2-H110M-S2[00m:[01;34m/home/student/ceccs18c50/cs232/0203[00m$ [11Pifconfig
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfsudo gedit /etc/vsft
+tpd.conf[A
+]0;admin1@ceclab2-H110M-S2: /home/student/ceccs18c50/cs232/0203[01;32madmin1@ceclab2-H110M-S2[00m:[01;34m/home/student/ceccs18c50/cs232/0203[00m$ [C[C[C[C[Capt-get install vsftpd[A
+]0;admin1@ceclab2-H110M-S2: /home/student/ceccs18c50/cs232/0203[01;32madmin1@ceclab2-H110M-S2[00m:[01;34m/home/student/ceccs18c50/cs232/0203[00m$ [C[C[C[C[C[C[C[C -get install vsftpd[A
+]0;admin1@ceclab2-H110M-S2: /home/student/ceccs18c50/cs232/0203[01;32madmin1@ceclab2-H110M-S2[00m:[01;34m/home/student/ceccs18c50/cs232/0203[00m$ [C[C[C[C[C[Cdduser akshaya[K[A
+]0;admin1@ceclab2-H110M-S2: /home/student/ceccs18c50/cs232/0203[01;32madmin1@ceclab2-H110M-S2[00m:[01;34m/home/student/ceccs18c50/cs232/0203[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[2PS4D3
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kftp localhost
+Connected to localhost.
+220 (vsFTPd 3.0.3)
+Name (localhost:admin1): admin1
+331 Please specify the password.
+Password:
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+drwxr-xr-x    2 1005     1005         4096 Jan 21 14:49 Desktop
+drwxr-xr-x    2 1005     1005         4096 Jan 21 14:49 Documents
+drwxr-xr-x    2 1005     1005         4096 Jan 21 14:49 Downloads
+drwxr-xr-x    2 1005     1005         4096 Jan 21 14:49 Music
+drwxr-xr-x    2 1005     1005         4096 Jan 21 14:49 Pictures
+drwxr-xr-x    2 1005     1005         4096 Jan 21 14:49 Public
+drwxr-xr-x    2 1005     1005         4096 Jan 21 14:49 Templates
+drwxr-xr-x    2 1005     1005         4096 Jan 21 14:49 Videos
+-rw-r--r--    1 1005     1005         8980 Jan 21 12:54 examples.desktop
+226 Directory send OK.
+ftp> exit
+421 Timeout.
+]0;admin1@ceclab2-H110M-S2: /home/student/ceccs18c50/cs232/0203[01;32madmin1@ceclab2-H110M-S2[00m:[01;34m/home/student/ceccs18c50/cs232/0203[00m$ ftp 1[K192.169[K8.0.51
+Connected to 192.168.0.51.
+220 (vsFTPd 3.0.3)
+Name (192.168.0.51:admin1): admin1
+331 Please specify the password.
+Password:
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+drwxr-xr-x    2 1005     1005         4096 Jan 21 12:47 Desktop
+drwxr-xr-x    2 1005     1005         4096 Jan 21 12:47 Documents
+drwxr-xr-x    2 1005     1005         4096 Jan 21 12:47 Downloads
+drwxr-xr-x    2 1005     1005         4096 Jan 21 12:47 Music
+drwxr-xr-x    2 1005     1005         4096 Jan 21 12:47 Pictures
+drwxr-xr-x    2 1005     1005         4096 Jan 21 12:47 Public
+drwxr-xr-x    2 1005     1005         4096 Jan 21 12:47 Templates
+drwxr-xr-x    2 1005     1005         4096 Jan 21 12:47 Videos
+-rw-r--r--    1 1005     1005         8980 Jan 21 12:46 examples.desktop
+226 Directory send OK.
+ftp> cd ..
+250 Directory successfully changed.
+ftp> cd home
+550 Failed to change directory.
+ftp> ls
+200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+drwxr-xr-x   23 1008     1008         4096 Feb 27 13:55 adharsh
+drwxr-xr-x   18 1005     1005         4096 Mar 02 09:19 admin1
+drwxr-xr-x   21 1000     1000         4096 Feb 28 15:06 ceclab2
+drwxr-xr-x   22 1009     1009         4096 Feb 28 12:35 s4c1
+drwxr-xr-x    2 1010     1010         4096 Jan 24 09:02 s4c2
+drwxr-xr-x   21 1007     1007         4096 Feb 25 16:04 s4d34
+drwxr-xr-x   15 1001     1001         4096 Jan 14 11:57 s6c1
+drwxr-xr-x   22 1002     1002         4096 Feb 26 15:56 s6c2
+drwxr-xr-x   16 1003     1003         4096 Jan 14 11:58 s6d1
+drwxr-xr-x   17 1004     1004         4096 Jan 28 09:01 s6d2
+drwxr-xr-x   24 1006     1006         4096 Mar 02 09:07 student
+226 Directory send OK.
+ftp> quit
+221 Goodbye.
+]0;admin1@ceclab2-H110M-S2: /home/student/ceccs18c50/cs232/0203[01;32madmin1@ceclab2-H110M-S2[00m:[01;34m/home/student/ceccs18c50/cs232/0203[00m$ sudo apt-get instal 
+l apache2
+[sudo] password for admin1: 
+
+Reading package lists... 0%
+
+Reading package lists... 100%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree       
+
+
+Reading state information... 0%
+
+Reading state information... 0%
+
+Reading state information... Done
+
+The following package was automatically installed and is no longer required:
+  snapd-login-service
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  apache2-bin apache2-data apache2-utils libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.1-0
+Suggested packages:
+  apache2-doc apache2-suexec-pristine | apache2-suexec-custom
+The following NEW packages will be installed:
+  apache2 apache2-bin apache2-data apache2-utils libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.1-0
+0 upgraded, 9 newly installed, 0 to remove and 15 not upgraded.
+Need to get 1,546 kB of archives.
+After this operation, 6,375 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+
+0% [Working]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]^[[C
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]^[[D
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]^[[C^[[C
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+0% [Waiting for headers]
+                        
+Get:1 http://in.archive.ubuntu.com/ubuntu xenial/main amd64 libapr1 amd64 1.5.2-3 [86.0 kB]
+
+0% [1 libapr1 8,440 B/86.0 kB 10%]
+                                  
+7% [Working]
+            
+Get:2 http://in.archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1 amd64 1.5.4-1build1 [77.1 kB]
+
+7% [2 libaprutil1 5,526 B/77.1 kB 7%]                        15.2 kB/s 1min 35s
+13% [Working]                                                15.2 kB/s 1min 31s
+                                                                               
+Get:3 http://in.archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1-dbd-sqlite3 amd64 1.5.4-1build1 [10.6 kB]
+
+13% [3 libaprutil1-dbd-sqlite3 10.6 kB/10.6 kB 100%]         15.2 kB/s 1min 30s
+16% [Waiting for headers]                                    15.2 kB/s 1min 30s
+                                                                               
+Get:4 http://in.archive.ubuntu.com/ubuntu xenial/main amd64 libaprutil1-ldap amd64 1.5.4-1build1 [8,720 B]
+
+16% [4 libaprutil1-ldap 8,720 B/8,720 B 100%]                15.2 kB/s 1min 29s
+18% [Waiting for headers]                                    15.2 kB/s 1min 29s
+                                                                               
+Get:5 http://in.archive.ubuntu.com/ubuntu xenial/main amd64 liblua5.1-0 amd64 5.1.5-8ubuntu1 [102 kB]
+
+19% [5 liblua5.1-0 4,077 B/102 kB 4%]                        15.2 kB/s 1min 29s
+26% [Waiting for headers]                                    15.2 kB/s 1min 23s
+                                                                               
+Get:6 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2-bin amd64 2.4.18-2ubuntu3.14 [930 kB]
+
+26% [6 apache2-bin 4,077 B/930 kB 0%]                        15.2 kB/s 1min 22s
+30% [6 apache2-bin 89.5 kB/930 kB 10%]                       15.2 kB/s 1min 17s
+36% [6 apache2-bin 191 kB/930 kB 21%]                        15.2 kB/s 1min 10s
+39% [6 apache2-bin 253 kB/930 kB 27%]                         15.2 kB/s 1min 6s
+41% [6 apache2-bin 297 kB/930 kB 32%]                         15.2 kB/s 1min 3s
+45% [6 apache2-bin 360 kB/930 kB 39%]                             15.2 kB/s 59s
+47% [6 apache2-bin 404 kB/930 kB 43%]                             15.2 kB/s 56s
+48% [6 apache2-bin 424 kB/930 kB 46%]                             15.2 kB/s 55s
+49% [6 apache2-bin 447 kB/930 kB 48%]                             15.2 kB/s 53s
+50% [6 apache2-bin 465 kB/930 kB 50%]                             15.2 kB/s 52s
+51% [6 apache2-bin 486 kB/930 kB 52%]                             15.2 kB/s 51s
+53% [6 apache2-bin 527 kB/930 kB 57%]                               117 kB/s 6s
+57% [6 apache2-bin 595 kB/930 kB 64%]                               117 kB/s 5s
+60% [6 apache2-bin 656 kB/930 kB 70%]                               117 kB/s 5s
+64% [6 apache2-bin 734 kB/930 kB 79%]                               117 kB/s 4s
+67% [6 apache2-bin 787 kB/930 kB 85%]                               117 kB/s 4s
+71% [6 apache2-bin 870 kB/930 kB 94%]                               117 kB/s 3s
+76% [Waiting for headers]                                           117 kB/s 2s
+                                                                               
+Get:7 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2-utils amd64 2.4.18-2ubuntu3.14 [82.1 kB]
+
+77% [7 apache2-utils 11.2 kB/82.1 kB 14%]                           117 kB/s 2s
+83% [Waiting for headers]                                           117 kB/s 2s
+                                                                               
+Get:8 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2-data all 2.4.18-2ubuntu3.14 [162 kB]
+
+83% [8 apache2-data 2,587 B/162 kB 2%]                              117 kB/s 2s
+93% [Waiting for headers]                                           117 kB/s 0s
+                                                                               
+Get:9 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 apache2 amd64 2.4.18-2ubuntu3.14 [86.5 kB]
+
+94% [9 apache2 3,933 B/86.5 kB 5%]                                  117 kB/s 0s
+100% [Working]                                                      117 kB/s 0s
+                                                                               
+Fetched 1,546 kB in 1min 9s (22.3 kB/s)
+Selecting previously unselected package libapr1:amd64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 223305 files and directories currently installed.)
+Preparing to unpack .../libapr1_1.5.2-3_amd64.deb ...
+Unpacking libapr1:amd64 (1.5.2-3) ...
+Selecting previously unselected package libaprutil1:amd64.
+Preparing to unpack .../libaprutil1_1.5.4-1build1_amd64.deb ...
+Unpacking libaprutil1:amd64 (1.5.4-1build1) ...
+Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+Preparing to unpack .../libaprutil1-dbd-sqlite3_1.5.4-1build1_amd64.deb ...
+Unpacking libaprutil1-dbd-sqlite3:amd64 (1.5.4-1build1) ...
+Selecting previously unselected package libaprutil1-ldap:amd64.
+Preparing to unpack .../libaprutil1-ldap_1.5.4-1build1_amd64.deb ...
+Unpacking libaprutil1-ldap:amd64 (1.5.4-1build1) ...
+Selecting previously unselected package liblua5.1-0:amd64.
+Preparing to unpack .../liblua5.1-0_5.1.5-8ubuntu1_amd64.deb ...
+Unpacking liblua5.1-0:amd64 (5.1.5-8ubuntu1) ...
+Selecting previously unselected package apache2-bin.
+Preparing to unpack .../apache2-bin_2.4.18-2ubuntu3.14_amd64.deb ...
+Unpacking apache2-bin (2.4.18-2ubuntu3.14) ...
+Selecting previously unselected package apache2-utils.
+Preparing to unpack .../apache2-utils_2.4.18-2ubuntu3.14_amd64.deb ...
+Unpacking apache2-utils (2.4.18-2ubuntu3.14) ...
+Selecting previously unselected package apache2-data.
+Preparing to unpack .../apache2-data_2.4.18-2ubuntu3.14_all.deb ...
+Unpacking apache2-data (2.4.18-2ubuntu3.14) ...
+Selecting previously unselected package apache2.
+Preparing to unpack .../apache2_2.4.18-2ubuntu3.14_amd64.deb ...
+Unpacking apache2 (2.4.18-2ubuntu3.14) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for ufw (0.35-0ubuntu2) ...
+Processing triggers for systemd (229-4ubuntu21.27) ...
+Processing triggers for ureadahead (0.100.0-19.1) ...
+Setting up libapr1:amd64 (1.5.2-3) ...
+Setting up libaprutil1:amd64 (1.5.4-1build1) ...
+Setting up libaprutil1-dbd-sqlite3:amd64 (1.5.4-1build1) ...
+Setting up libaprutil1-ldap:amd64 (1.5.4-1build1) ...
+Setting up liblua5.1-0:amd64 (5.1.5-8ubuntu1) ...
+Setting up apache2-bin (2.4.18-2ubuntu3.14) ...
+Setting up apache2-utils (2.4.18-2ubuntu3.14) ...
+Setting up apache2-data (2.4.18-2ubuntu3.14) ...
+Setting up apache2 (2.4.18-2ubuntu3.14) ...
+Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Processing triggers for systemd (229-4ubuntu21.27) ...
+Processing triggers for ureadahead (0.100.0-19.1) ...
+Processing triggers for ufw (0.35-0ubuntu2) ...
+]0;admin1@ceclab2-H110M-S2: /home/student/ceccs18c50/cs232/0203[01;32madmin1@ceclab2-H110M-S2[00m:[01;34m/home/student/ceccs18c50/cs232/0203[00m$ sudo apt-get install
+l apache2
+
+Reading package lists... 0%
+
+Reading package lists... 100%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree       
+
+
+Reading state information... 0%
+
+Reading state information... 0%
+
+Reading state information... Done
+
+apache2 is already the

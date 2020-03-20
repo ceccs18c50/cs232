@@ -1,0 +1,26 @@
+CEC CS 18 C50
+Rinu Elisabath Mathew
+
+--------------------------------
+#1: Set up http and ftp server
+
+---------------------------------
+Commands used
+
+
+sudo apt-get install vsftpd    # install ftp using vsftpd
+
+sudo gedit /etc/vsftpd.conf    # edits the content
+ 
+sudo apt-get install apache2   # install http using apache2
+ 
+sudo gedit /var/www/html/index.html  # edits html code
+
+
+--------------------------------
+Output: 
+
+
+ftp sever is available at 192.168.0.90
+
+screenshot 
