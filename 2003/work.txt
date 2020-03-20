@@ -1,0 +1,28 @@
+Script started on 2020-03-20 18:20:36+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/2003[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/2003[00m$ gedit mult.pl
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/2003[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/2003[00m$ perl mult.pl
+enter multiplier 3
+enter multiplicand 5
+product is 15
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/2003[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/2003[00m$ gedit fact.[Korial.pl
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/2003[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/2003[00m$ perl factorial.perl[K[K[Kl
+enter limit 5
+factorial is 120
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/2003[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/2003[00m$ perl f.pl
+Can't open perl script "f.pl": No such file or directory
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/2003[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/2003[00m$ gedit f.pl
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/2003[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/2003[00m$ perl f.pl
+String found where operator expected at f.pl line 4, near "$i"\n""
+	(Missing operator before "\n"?)
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/2003[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/2003[00m$ perl f.pl[1@gedit[C[C[C[C[C
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/2003[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/2003[00m$ gedit f.pl[1Pperl[C[C[C[C[C
+china
+japan
+russia
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/2003[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/2003[00m$ exit
+exit
+
+Script done on 2020-03-20 18:34:06+05:30 [COMMAND_EXIT_CODE="0"]

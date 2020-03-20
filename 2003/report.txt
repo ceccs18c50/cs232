@@ -1,0 +1,39 @@
+CEC CS 18 C50
+Rinu Elisabath Mathew
+
+--------------------------------
+#1: Perl
+---------------------------------
+
+Program Name:
+----------------------------
+ 
+1. Print product of two numbers
+
+
+2.Find factorial of a number
+
+
+3.Accessing elements of an array consisting of names of countries
+ 
+---------------------------------
+ 
+Output:
+----------------------------------
+
+1.
+    enter multiplier 3
+    enter multiplicand 5
+    product is 15
+
+2.
+     enter limit 5
+     factorial is 120
+
+3.
+     china
+     japan
+     russia
+
+
+-------------------------------------  
