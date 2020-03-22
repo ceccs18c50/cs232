@@ -1,0 +1,102 @@
+Script started on Monday 27 January 2020 09:16:12 AM IST
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ ls
+work.txt
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ ls -lt
+total 0
+-rw-rw-r-- 1 student student 0 Jan 27 09:16 work.txt
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ ls -l
+total 0
+-rw-rw-r-- 1 student student 0 Jan 27 09:16 work.txt
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ ls -ltr
+total 0
+-rw-rw-r-- 1 student student 0 Jan 27 09:16 work.txt
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ alias ll='ls -l'
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ ll
+total 0
+-rw-rw-r-- 1 student student 0 Jan 27 09:16 work.txt
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ unalias ll
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ ll
+ll: command not found
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ pwd
+/home/student/ceccs18c50/cs232/2701
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ cat > aa.txt
+183
+723
+654
+^Cexit
+
+No command 'xit' found, did you mean:
+ Command 'nit' from package 'python-nevow' (universe)
+ Command 'vit' from package 'vit' (universe)
+ Command 'git' from package 'git' (main)
+ Command 'xvt' from package 'xvt' (universe)
+ Command 'wit' from package 'wit' (universe)
+ Command 'xia' from package 'xia' (universe)
+ Command 'xwit' from package 'xwit' (universe)
+xit: command not found
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ cat aa.txt > bb.txt
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ paste aa.txt bb.txt
+183	183
+723	723
+654	654
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ grep "3" aa.txt
+18[01;31m[K3[m[K
+72[01;31m[K3[m[K
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ rm bb.txt
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ ls
+aa.txt  work.txt
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ mkdir folder
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ ls
+aa.txt  [0m[01;34mfolder[0m  work.txt
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ mkdoi[K[K[K[K[Ksort -n aa.txt
+183
+654
+723
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ cut -c 2 aa.txt
+8
+2
+5
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ cat > cc.txt
+parvathy
+kavya
+joshena
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ ji[Koin aa.txt cc.txt
+join: aa.txt:3: is not sorted: 654
+join: cc.txt:2: is not sorted: kavya
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ paste aa.txt cc.txt
+183	parvathy
+723	kavya
+654	joshena
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ cat > bb.txt
+321
+987
+125
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ join aa.txt bb.txt
+join: aa.txt:3: is not sorted: 654
+join: bb.txt:3: is not sorted: 125
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ sort -n bb.txt
+125
+321
+987
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ join aa.txt bb.txt
+join: aa.txt:3: is not sorted: 654
+join: bb.txt:3: is not sorted: 125
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ join -1 2 -2 3 [K[K[K 3 aa.txt bb.txt
+ 183 321
+ 183 987
+ 183 125
+ 723 321
+ 723 987
+ 723 125
+ 654 321
+ 654 987
+ 654 125
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ whoami
+student
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ who
+guest-pesbur tty7         2020-01-25 14:25 (:0)
+student  tty8         2020-01-27 09:00 (:1)
+]0;student@ceclab2-H110M-S2: ~/ceccs18c50/cs232/2701[01;32mstudent@ceclab2-H110M-S2[00m:[01;34m~/ceccs18c50/cs232/2701[00m$ exit
+exit
+
+Script done on Monday 27 January 2020 09:41:32 AM IST
