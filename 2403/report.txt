@@ -1,0 +1,81 @@
+CEC CS 18 C50
+Rinu Elisabath Mathew
+
+--------------------------------
+#1: Linux installation (t6)
+---------------------------------
+
+Command/Shell script/Program name
+-------------------------------
+
+	Ubuntu 19.10( Eoan Ermine) installation 
+
+	hostnamectl     # displays hostname and related settings
+	
+	sudo update-grub # updates grub configuration
+    
+        grub-emu        # displays the grub menu
+
+        lsb_release -a  # details of installed linux distro
+  
+
+---------------------------------
+
+Output
+
+-------------------------------------
+
+	Images 1-5(.jpg) shows installation steps.
+
+	Image 6.jpg shows grub menu
+
+	Image 7.jpg     shows details of the installed linux distribution,
+                        generates grub configuration file, 
+			displays hostname
+
+	Ubuntu 19.10 is installed alongside windows.
+
+
+------------------------------------------
+
+
+------------------------------------------
+
+#2:Package Management (t8.1)
+
+----------------------------------------
+
+Command/Shell script/Program name
+------------------------------------------
+
+	sudo apt-get install javascript-common # installs the package javascript-common
+
+	sudo apt-get update                    # updates local package
+
+	sudo apt-get -u upgrade                # upgrades all installed packages
+
+	sudo apt remove javascript-common      # remove installed package javascript-common
+
+	dpkg -s zip                            # displays whether zip is installed or not
+
+	dpkg --version                         # displays dpkg version
+
+	apt-cache show vlc                     # displays basic information about vlc
+
+	apt-cache depends synaptic             # lists all dependent files before installation
+
+	sudo apt list >a.txt                   # lists all installed packages
+	
+	grep "javascript-common" a.txt         # searches for javascript-common in a.txt
+
+-----------------------------------------------
+
+Output
+
+-----------------------------------------------
+
+	a.txt contains list of all installed packages after removing javascript-common.
+
+-----------------------------------------------
+
+
