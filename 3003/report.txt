@@ -1,0 +1,63 @@
+CEC CS 18 C50     30-03-2020
+
+RINU ELISABATH MATHEW
+
+--------------------------------
+
+#1: Kernel Compilation (t8.4)
+
+---------------------------------
+Command/Shell script/Program name
+
+---------------------------------
+
+	# download latest stable kernel
+	curl -O https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.5.9.tar.xz
+
+	# extract source code
+	xz -d -v linux-5.5.9.tar.xz
+
+	# download PGP signature for linux-5.5.9.tar
+	curl -O https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.5.9.tar.sign
+
+	# verify kernel tartball 
+	gpg --verify linux-5.5.9.tar.sign
+
+	# grab public key(RSA key) from PGP keyserver to verify signature
+	gpg --recv-keys 647F28654894E3BD457199BE38DBBDC86092693E
+
+
+	# extract linux kernel tartball
+	tar xvf linux-5.5.9.tar
+
+	# change directory
+	cd linux-5.5.9
+
+	# configure linux kernel features and module(copied existing config file )
+	cp -v /boot/config-$(uname -r).config
+
+	# install required  development tools to compile the kernel
+	sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf-dev
+
+	# compile the linux kernel
+	make -j $(nproc)
+---------------
+
+--------------------------------
+Output: 
+
+
+	Compiled kernel is at linux-5.5.9
+
+	
+
+
+-------------------
+Remarks if any:
+
+
+	screenshot.png contains the list of files that are compiled.
+
+
+
+-------------------------------------
