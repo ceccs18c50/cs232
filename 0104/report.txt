@@ -1,0 +1,60 @@
+CEC CS 18 C50  01-04-2020
+Rinu Elisabath Mathew
+
+--------------------------------
+
+#1: Setting up ftp and http server (t7)
+
+---------------------------------
+Command/Shell script/Program name
+
+---------------------------------
+	# install ftp server
+	sudo apt-get install vsftpd
+
+	# checks whether vsftpd is installed
+        dpkg -s vsftpd
+ 
+	# install apache2
+	sudo apt-get install apache2
+
+	# checks if apache2 is installed
+	dpkg -s apache2
+
+	# edits server configuration 
+	sudo gedit /etc/vsftpd.conf
+
+	# connect ftp on local server
+ 	ftp localhost
+
+	# to find ip address
+	ifconfig
+
+	# connect ftp via ip address
+	ftp 192.168.1.5
+
+	# edit apache2
+	sudo gedit /var/www/html/index.html
+--------------------------
+
+Output: 
+----------------------------
+
+	screenshot1.png : shows setting up ftp server ,displays details of directories in home directory and the users(when connected to localhost)
+
+
+	screenshot2.png : screenshot of webpage(avilable at 192.168.1.5)
+
+
+
+
+
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+------------------------------------
