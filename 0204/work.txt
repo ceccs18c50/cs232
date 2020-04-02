@@ -1,0 +1,164 @@
+Script started on 2020-04-02 12:45:29+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/0204[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/0204[00m$ sudo apt-get install javascript-common
+[sudo] password for riya: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following NEW packages will be installed:
+  javascript-common
+0 upgraded, 1 newly installed, 0 to remove and 24 not upgraded.
+Need to get 0 B/6,066 B of archives.
+After this operation, 69.6 kB of additional disk space will be used.
+Selecting previously unselected package javascript-common.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 128632 files and directories currently installed.)
+Preparing to unpack .../javascript-common_11_all.deb ...
+Unpacking javascript-common (11) ...
+Setting up javascript-common (11) ...
+apache2_invoke: Enable configuration javascript-common
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/0204[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/0204[00m$ sudo apt-get update
+0% [Working]0% [Connecting to in.archive.ubuntu.com]                                        Hit:1 http://in.archive.ubuntu.com/ubuntu eoan InRelease
+                                        0% [Connecting to security.ubuntu.com]0% [Waiting for headers] [Connecting to security.ubuntu.com]                                                            Hit:2 http://in.archive.ubuntu.com/ubuntu eoan-updates InRelease
+                                                            0% [Connecting to security.ubuntu.com]0% [Waiting for headers] [Connecting to security.ubuntu.com (91.189.91.39)]                                                                           Get:3 http://in.archive.ubuntu.com/ubuntu eoan-backports InRelease [88.8 kB]
+0% [3 InRelease 1,142 B/88.8 kB 1%] [Connecting to security.ubuntu.com (91.189.0% [3 InRelease 32.1 kB/88.8 kB 36%] [Connecting to security.ubuntu.com (91.1890% [3 InRelease 47.6 kB/88.8 kB 54%] [Connecting to security.ubuntu.com (2001:6                                                                               0% [Waiting for headers]                        Get:4 http://security.ubuntu.com/ubuntu eoan-security InRelease [97.5 kB]
+0% [4 InRelease 978 B/97.5 kB 1%]0% [4 InRelease 978 B/97.5 kB 1%]0% [4 InRelease 21.6 kB/97.5 kB 22%]0% [4 InRelease 51.2 kB/97.5 kB 53%]0% [4 InRelease 83.4 kB/97.5 kB 86%]                                    0% [Working]88% [Working]             Get:5 http://security.ubuntu.com/ubuntu eoan-security/main amd64 DEP-11 Metadata [7,392 B]
+88% [5 Components-amd64 2,370 B/7,392 B 32%]                                            90% [Working]90% [5 Components-amd64 store 0 B] [Waiting for headers]                                                        90% [Waiting for headers]                         Get:6 http://security.ubuntu.com/ubuntu eoan-security/universe amd64 DEP-11 Metadata [4,856 B]
+91% [6 Components-amd64 1,082 B/4,856 B 22%]                                            92% [Working]             Get:7 http://security.ubuntu.com/ubuntu eoan-security/universe DEP-11 48x48 Icons [9,072 B]
+93% [7 icons-48x48 1,172 B/9,072 B 13%]93% [6 Components-amd64 store 0 B] [7 icons-48x48 1,172 B/9,072 B 13%]                                                                      93% [7 icons-48x48 1,172 B/9,072 B 13%]                                       96% [Waiting for headers]                         Get:8 http://security.ubuntu.com/ubuntu eoan-security/universe DEP-11 64x64 Icons [11.6 kB]
+96% [8 icons-64x64 909 B/11.6 kB 8%]96% [7 icons-48x48 store 0 B] [8 icons-64x64 909 B/11.6 kB 8%]                                                              96% [8 icons-64x64 909 B/11.6 kB 8%]                                    100% [Working]100% [8 icons-64x64 store 0 B]                              100% [Working]              Fetched 219 kB in 6s (39.2 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 3%Reading package lists... 3%Reading package lists... 7%Reading package lists... 7%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 41%Reading package lists... 41%Reading package lists... 72%Reading package lists... 72%Reading package lists... 89%Reading package lists... 89%Reading package lists... 90%Reading package lists... 90%Reading package lists... 90%Reading package lists... 90%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 92%Reading package lists... 92%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/0204[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/0204[00m$ dpkg -s zip
+Package: zip
+Status: install ok installed
+Priority: optional
+Section: utils
+Installed-Size: 623
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: foreign
+Version: 3.0-11build1
+Depends: libbz2-1.0, libc6 (>= 2.14)
+Recommends: unzip
+Description: Archiver for .zip files
+ This is InfoZIP's zip program. It produces files that are fully
+ compatible with the popular PKZIP program; however, the command line
+ options are not identical. In other words, the end result is the same,
+ but the methods differ. :-)
+ .
+ This version supports encryption.
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+Homepage: http://www.info-zip.org/Zip.html
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/0204[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/0204[00m$ dpkg -- [Kversion
+Debian 'dpkg' package management program version 1.19.7 (amd64).
+This is free software; see the GNU General Public License version 2 or
+later for copying conditions. There is NO warranty.
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/0204[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/0204[00m$ apt-cache show vlc
+Package: vlc
+Architecture: amd64
+Version: 3.0.8-2
+Priority: optional
+Section: universe/graphics
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 221
+Provides: mp3-decoder
+Depends: vlc-bin (= 3.0.8-2), vlc-plugin-base (= 3.0.8-2), vlc-plugin-qt (= 3.0.8-2), vlc-plugin-video-output (= 3.0.8-2)
+Recommends: vlc-l10n (= 3.0.8-2), vlc-plugin-notify (= 3.0.8-2), vlc-plugin-samba (= 3.0.8-2), vlc-plugin-skins2 (= 3.0.8-2), vlc-plugin-video-splitter (= 3.0.8-2), vlc-plugin-visualization (= 3.0.8-2)
+Filename: pool/universe/v/vlc/vlc_3.0.8-2_amd64.deb
+Size: 33676
+MD5sum: fc5ab4cba172fc1f886c1d1ed26de03f
+SHA1: dee478ff9b9e21b2b2040925a68c92a9f6acd2ad
+SHA256: 7c2802bbcc161cba4d5e3577a494a89df410fbaeec0b6d2b2ec750c827e29aea
+Homepage: https://www.videolan.org/vlc/
+Description-en: multimedia player and streamer
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ VLC can also be used as a streaming server that duplicates the stream it
+ reads and multicasts them through the network to other clients, or serves
+ them through HTTP.
+ .
+ VLC has support for on-the-fly transcoding of audio and video formats, either
+ for broadcasting purposes or for movie format transformations. Support for
+ most output methods is provided by this package, but features can be added by
+ installing additional plugins:
+  * vlc-plugin-access-extra
+  * vlc-plugin-fluidsynth
+  * vlc-plugin-jack
+  * vlc-plugin-notify
+  * vlc-plugin-samba
+  * vlc-plugin-skins2
+  * vlc-plugin-svg
+  * vlc-plugin-video-splitter
+  * vlc-plugin-visualization
+Description-md5: d96da6b991aa50928533b16fb11b3136
+Task: kubuntu-desktop, kubuntu-full, lubuntu-desktop, ubuntustudio-video
+
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/0204[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/0204[00m$ apt-cache depends synaptic
+synaptic
+  Depends: libapt-pkg5.90
+  Depends: libc6
+  Depends: libept1.5.90
+  Depends: libgcc1
+  Depends: libgdk-pixbuf2.0-0
+  Depends: libglib2.0-0
+  Depends: libgtk-3-0
+  Depends: libpango-1.0-0
+  Depends: libstdc++6
+  Depends: libvte-2.91-0
+  Depends: libxapian30
+  Depends: hicolor-icon-theme
+  Depends: policykit-1
+    policykit-1:i386
+  Conflicts: menu
+  Recommends: libgtk3-perl
+  Recommends: xdg-utils
+  Suggests: dwww
+  Suggests: menu
+    menu:i386
+  Suggests: deborphan
+  Suggests: apt-xapian-index
+  Suggests: tasksel
+  Suggests: software-properties-gtk
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/0204[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/0204[00m$ sudo apt remove javascript-common
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages will be REMOVED:
+  javascript-common
+0 upgraded, 0 newly installed, 1 to remove and 24 not upgraded.
+After this operation, 69.6 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+
+7[0;23r8[1A(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 128637 files and directories currently installed.)
+Removing javascript-common (11) ...
+7[24;0f[42m[30mProgress: [  0%][49m[39m [..........................................................] 87[24;0f[42m[30mProgress: [ 33%][49m[39m [###################.......................................] 8Conf javascript-common disabled.
+apache2_invoke prerm: Disable configuration javascript-common
+7[24;0f[42m[30mProgress: [ 67%][49m[39m [######################################....................] 8
+7[0;24r8[1A[J]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/0204[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/0204[00m$ sudo apt list > a.txt
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/0204[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/0204[00m$ grep "javascript-common" a.txt
+[01;31m[Kjavascript-common[m[K/eoan,eoan,now 11 all [residual-config]
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/0204[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/0204[00m$ sudo update-grub
+Sourcing file `/etc/default/grub'
+Sourcing file `/etc/default/grub.d/init-select.cfg'
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-5.3.0-18-generic
+Found initrd image: /boot/initrd.img-5.3.0-18-generic
+Found Windows Boot Manager on /dev/sda2@/EFI/Microsoft/Boot/bootmgfw.efi
+Adding boot menu entry for EFI firmware configuration
+done
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/0204[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/0204[00m$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 19.10
+Release:	19.10
+Codename:	eoan
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/0204[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/0204[00m$ [K]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/0204[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/0204[00m$ [K]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/0204[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/0204[00m$ [K]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/0204[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/0204[00m$ [K]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/0204[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/0204[00m$ exit
+exit
+
+Script done on 2020-04-02 12:52:16+05:30 [COMMAND_EXIT_CODE="0"]
