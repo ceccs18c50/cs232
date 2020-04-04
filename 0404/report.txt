@@ -1,0 +1,101 @@
+CEC CS 18 C50     04-04-2020
+
+Rinu Elisabath Mathew
+
+--------------------------------
+#1:LAMP stack (t8.3)
+
+----------------------------------------
+
+Command/Shell script/Program name
+------------------------------------------
+	# update local packages
+	sudo apt-get update
+
+	# install apache2
+	sudo apt-get install apache2
+	
+	# starts apache2
+	sudo service apache2 start
+	
+	#install mysql
+	sudo apt-get install mysql-server
+
+	# starts mysql
+	sudo service mysql start
+
+	# accessing mysql( prompts for password)
+	mysql -u root -p
+
+		//create database
+		mysql> create database studentlist;
+		// lists databases
+		mysql> show databases;
+		//changes database	
+		mysql> use studentlist;
+		// create table,define column and its datatype
+		mysql> create table student (rno varchar(5) primary key,name varchar(30));
+		//lists tables
+		mysql> show tables;
+		// add new rows of data
+		mysql> insert into student(rno,name) values('1','Rinu');
+		// fetch all fields
+		mysql> select *from student;
+	# php installation
+	sudo apt install php libapache2-mod-php php-mysql
+
+	# creates php file info
+	sudo nano /var/www/html/info.php
+
+	# creates php file index
+	sudo nano /var/www/html/index.php
+
+
+-----------------------------------------------
+
+Output
+
+-----------------------------------------------
+
+	1.png : mysql commands for creating database,table,inserting rows,displaying fields etc
+ 	
+	info.png : php version info viewed from localhost/info.php
+
+        index.png :php page accessed via 192.168.1.4/index.php
+
+----------------------------------------------
+Remarks if any:
+
+-----------------------------------------------
+
+--------------------------------
+
+#2:Shell script to implement menu driven calculator (s6)
+
+----------------------------------------
+
+Command/Shell script/Program name
+------------------------------------------
+	 calculator.sh  # shell script
+
+         echo : prints the text 
+
+         read : asks for user's input
+
+	`expr $x operator $y` : evaluates the expression
+
+	 sleep 0.5 : pauses the execution for 0.5 seconds
+
+-----------------------------------------------
+
+Output
+
+-----------------------------------------------
+
+	calc.png displays the output of various operations.
+
+----------------------------------------------
+Remarks if any:
+
+-----------------------------------------------
+
