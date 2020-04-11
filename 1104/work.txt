@@ -1,0 +1,193 @@
+Script started on 2020-04-11 17:36:31+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/1104[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/1104[00m$ nano sys_info_1.sh
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;35H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 4.3                     sys_info_1.sh                                [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2d[39;49m(B[m[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[2d[36m#!/usr/bin/bash[3d(B[0;1m[34mprintf[39m(B[m (B[0;1m[33m"CURRENTLY LOGGED USER\n"[4d[39m(B[mwhoami[5d(B[0;1m[34mprintf[39m(B[m (B[0;1m[33m"LOGIN NAME\n"[6d[34mprintf[39m(B[m (B[0;1m[33m"%s\n"[39m(B[m (B[0;1m[31m$LOGNAME[7d[34mprintf[39m(B[m (B[0;1m[33m"CURRENT SHELL, PATH TO THE SHELL\n"[8d[34mprintf[39m(B[m (B[0;1m[33m"%s\n"[39m(B[m (B[0;1m[31m$0[22d[39m(B[m[K[8;17H[?12l[?25h[?25l[9d[?12l[?25h[?25lp[?12l[?25h[?25lr[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25l(B[0;1m[34mprintf[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l%[?12l[?25h[?25ls[?12l[?25h[?25l[32m\[39m(B[m[?12l[?25h[?25ln[?12l[?25h[?25l[8G(B[0;1m[33m"%s\n"[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$s[39m(B[m[?12l[?25h[?25l(B[0;1m[31mh[39m(B[m[?12l[?25h[?25l(B[0;1m[31me[39m(B[m[?12l[?25h[?25l(B[0;1m[31ml[39m(B[m[?12l[?25h[?25l(B[0;1m[31ml[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[32m$[39m(B[m[K[?12l[?25h[?25l(B[0;1m[31m$S[39m(B[m[?12l[?25h[?25l(B[0;1m[31mH[39m(B[m[?12l[?25h[?25l(B[0;1m[31mE[39m(B[m[?12l[?25h[?25l(B[0;1m[31mL[39m(B[m[?12l[?25h[?25l(B[0;1m[31mL[39m(B[m[?12l[?25h[?25l[10d[?12l[?25h[?25l(B[0;1m[34mprintf[39m(B[m (B[0;1m[33m"HOME DIRECTORY\n"[11d[34mprintf[39m(B[m (B[0;1m[33m"%s\n"[39m(B[m (B[0;1m[31m$HOME[12d[34mprintf[39m(B[m (B[0;1m[33m"OPERATING SYSTEM TYPE\n"[13d[34mprintf[39m(B[m (B[0;1m[33m"%s\n"[39m(B[m (B[0;1m[31m$OSTYPE[14d[34mprintf[39m(B[m (B[0;1m[33m"CURRENT PATH SETTING\n"[15d[34mprintf[39m(B[m (B[0;1m[33m"%s\n"[39m(B[m (B[0;1m[31m$PATH[16d[34mprintf[39m(B[m (B[0;1m[33m"CURRENT WORKING DIRECTORY\n"[17d[39m(B[mpwd[18d(B[0;1m[34mprintf[39m(B[m (B[0;1m[33m"NUMBER OF USERS CURRENTLY LOGGED IN\n"[19d[39m(B[mw[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l7[3;22r8[3dM[1;24r[3;1H[?12l[?25h[?25l[23;14H       (B[0;7mM-D(B[m DOS Format      (B[0;7mM-A(B[m Append          (B[0;7mM-B(B[m Backup File[24;2H(B[0;7mC(B[m Cancel           (B[0;7mM-M(B[m Mac Format      (B[0;7mM-P(B[m Prepend         (B[0;7m^T(B[m To Files[K[22d(B[0;7mFile Name to Write: sys_info_1.sh                                               [22;1H(B[m[22;34H[?12l[?25h[?25l[K[1;79H[22;34H(B[0;7m[ Writing... ](B[m[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 19 lines ](B[m[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[3d[?12l[?25h[?25l[22d[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/1104[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/1104[00m$ bash sys_info_1.sh
+CURRENTLY LOGGED USER
+riya
+LOGIN NAME
+riya
+CURRENT SHELL, PATH TO THE SHELL
+sys_info_1.sh
+/bin/bash
+HOME DIRECTORY
+/home/riya
+OPERATING SYSTEM TYPE
+linux-gnu
+CURRENT PATH SETTING
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+CURRENT WORKING DIRECTORY
+/home/riya/ceccs18c50/cs232/1104
+NUMBER OF USERS CURRENTLY LOGGED IN
+ 17:40:26 up 9 min,  1 user,  load average: 0.11, 0.52, 0.48
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+riya     :0       :0               17:31   ?xdm?   1:12   0.01s /usr/lib/gdm3/g
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/1104[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/1104[00m$ nano sys_info_2.sh
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;35H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 4.3                     sys_info_2.sh                                [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2d[39;49m(B[m[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[2d[36m#!/usr/bin/bash[3d(B[0;1m[34mprintf[39m(B[m (B[0;1m[33m"OS AND VERSION,RELEASE NUMBER,KERNEL VERSION\n"[4d[39m(B[mhostnamectl[5d(B[0;1m[34mprintf[39m(B[m (B[0;1m[33m"AVAILABLE SHELLS\n"[6d[34mcat[39m(B[m /etc/shells[7d(B[0;1m[34mprintf[39m(B[m (B[0;1m[33m"CPU INFORMATION\n"[8d[39m(B[mlscpu[9d(B[0;1m[34mprintf[39m(B[m (B[0;1m[33m"MEMORY INFORMATION\n"[10d[39m(B[mfree[11d(B[0;1m[34mprintf[39m(B[m (B[0;1m[33m"HARD DISK INFORMATION\n"[12d[39m(B[msudo parted(B[0;1m[35m -l[13d[39m(B[mdf(B[0;1m[35m -h[14d[34mprintf[39m(B[m (B[0;1m[33m"FILE SYSTEM (MOUNTED)\n"[15d[39m(B[mfindmnt[22d[K[16d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l7[3;22r8[3dM[1;24r[3;1H[?12l[?25h[?25l[23;14H       (B[0;7mM-D(B[m DOS Format      (B[0;7mM-A(B[m Append          (B[0;7mM-B(B[m Backup File[24;2H(B[0;7mC(B[m Cancel           (B[0;7mM-M(B[m Mac Format      (B[0;7mM-P(B[m Prepend         (B[0;7m^T(B[m To Files[K[22d(B[0;7mFile Name to Write: sys_info_2.sh                                               [22;1H(B[m[22;34H[?12l[?25h[?25l[K[1;79H[22;34H(B[0;7m[ Writing... ](B[m[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 16 lines ](B[m[23;14H(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24;2H(B[0;7mX(B[m Exit      (B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[3d[?12l[?25h[?25l[22d[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/1104[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/1104[00m$ nano sys_info_2.sh[C[1P sys_info_2.sh[1P sys_info_2.sh[1P sys_info_2.sh[1P sys_info_2.shb sys_info_2.sha sys_info_2.shs sys_info_2.shh sys_info_2.sh
+OS AND VERSION,RELEASE NUMBER,KERNEL VERSION
+   Static hostname: pc-of-rinu
+         Icon name: computer-laptop
+           Chassis: laptop
+        Machine ID: e1a622def88a4facab3fc08617e0f78a
+           Boot ID: 6ef256c57ccf4c48ba1d64815ee84272
+  Operating System: ]8;;https://www.ubuntu.com/Ubuntu 19.10]8;;
+            Kernel: Linux 5.3.0-18-generic
+      Architecture: x86-64
+AVAILABLE SHELLS
+# /etc/shells: valid login shells
+/bin/sh
+/bin/bash
+/usr/bin/bash
+/bin/rbash
+/usr/bin/rbash
+/bin/dash
+/usr/bin/dash
+CPU INFORMATION
+Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Byte Order:                      Little Endian
+Address sizes:                   39 bits physical, 48 bits virtual
+CPU(s):                          4
+On-line CPU(s) list:             0-3
+Thread(s) per core:              2
+Core(s) per socket:              2
+Socket(s):                       1
+NUMA node(s):                    1
+Vendor ID:                       GenuineIntel
+CPU family:                      6
+Model:                           142
+Model name:                      Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+Stepping:                        9
+CPU MHz:                         2708.931
+CPU max MHz:                     3100.0000
+CPU min MHz:                     400.0000
+BogoMIPS:                        5399.81
+Virtualization:                  VT-x
+L1d cache:                       64 KiB
+L1i cache:                       64 KiB
+L2 cache:                        512 KiB
+L3 cache:                        3 MiB
+NUMA node0 CPU(s):               0-3
+Vulnerability L1tf:              Mitigation; PTE Inversion; VMX conditional cach
+                                 e flushes, SMT vulnerable
+Vulnerability Mds:               Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerability Meltdown:          Mitigation; PTI
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled v
+                                 ia prctl and seccomp
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user
+                                  pointer sanitization
+Vulnerability Spectre v2:        Mitigation; Full generic retpoline, IBPB condit
+                                 ional, IBRS_FW, STIBP conditional, RSB filling
+Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtr
+                                 r pge mca cmov pat pse36 clflush dts acpi mmx f
+                                 xsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rd
+                                 tscp lm constant_tsc art arch_perfmon pebs bts 
+                                 rep_good nopl xtopology nonstop_tsc cpuid aperf
+                                 mperf pni pclmulqdq dtes64 monitor ds_cpl vmx e
+                                 st tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_
+                                 1 sse4_2 x2apic movbe popcnt tsc_deadline_timer
+                                  aes xsave avx f16c rdrand lahf_lm abm 3dnowpre
+                                 fetch cpuid_fault epb invpcid_single pti ssbd i
+                                 brs ibpb stibp tpr_shadow vnmi flexpriority ept
+                                  vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep
+                                  bmi2 erms invpcid mpx rdseed adx smap clflusho
+                                 pt intel_pt xsaveopt xsavec xgetbv1 xsaves dthe
+                                 rm ida arat pln pts hwp hwp_notify hwp_act_wind
+                                 ow hwp_epp md_clear flush_l1d
+MEMORY INFORMATION
+              total        used        free      shared  buff/cache   available
+Mem:        8014652     1169920     5622856      158828     1221876     6423012
+Swap:       2097148           0     2097148
+HARD DISK INFORMATION
+[sudo] password for riya: 
+Model: ATA WDC WD10SPZX-75Z (scsi)
+Disk /dev/sda: 1000GB
+Sector size (logical/physical): 512B/4096B
+Partition Table: gpt
+Disk Flags: 
+
+Number  Start   End     Size    File system  Name                          Flags
+ 1      1049kB  524MB   523MB   ntfs         Basic data partition          hidden, diag
+ 2      524MB   629MB   105MB   fat32        EFI system partition          boot, esp
+ 3      629MB   646MB   16.8MB               Microsoft reserved partition  msftres
+ 4      646MB   527GB   526GB   ntfs         Basic data partition          msftdata
+ 5      527GB   1000GB  473GB   ext4
+
+
+Filesystem      Size  Used Avail Use% Mounted on
+udev            3.8G     0  3.8G   0% /dev
+tmpfs           783M  1.8M  781M   1% /run
+/dev/sda5       434G   31G  381G   8% /
+tmpfs           3.9G     0  3.9G   0% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/loop0      1.0M  1.0M     0 100% /snap/gnome-logs/93
+/dev/loop1       55M   55M     0 100% /snap/core18/1705
+/dev/loop3      1.0M  1.0M     0 100% /snap/gnome-logs/81
+/dev/loop4       15M   15M     0 100% /snap/gnome-characters/495
+/dev/loop2      150M  150M     0 100% /snap/gnome-3-28-1804/71
+/dev/loop5      4.4M  4.4M     0 100% /snap/gnome-calculator/704
+/dev/loop6       94M   94M     0 100% /snap/core/8935
+/dev/loop7      4.3M  4.3M     0 100% /snap/gnome-calculator/544
+/dev/loop9       49M   49M     0 100% /snap/gtk-common-themes/1474
+/dev/loop13     161M  161M     0 100% /snap/gnome-3-28-1804/116
+/dev/loop11      45M   45M     0 100% /snap/gtk-common-themes/1440
+/dev/loop10      55M   55M     0 100% /snap/core18/1668
+/dev/loop12      92M   92M     0 100% /snap/core/8689
+/dev/loop8       15M   15M     0 100% /snap/gnome-characters/399
+/dev/sda2        96M   40M   57M  42% /boot/efi
+tmpfs           783M   44K  783M   1% /run/user/1001
+FILE SYSTEM (MOUNTED)
+TARGET                                SOURCE      FSTYPE  OPTIONS
+/                                     /dev/sda5   ext4    rw,relatime,errors=rem
+├─/sys                                sysfs       sysfs   rw,nosuid,nodev,noexec
+│ ├─/sys/kernel/security              securityfs  securit rw,nosuid,nodev,noexec
+│ ├─/sys/fs/cgroup                    tmpfs       tmpfs   ro,nosuid,nodev,noexec
+│ │ ├─/sys/fs/cgroup/unified          cgroup2     cgroup2 rw,nosuid,nodev,noexec
+│ │ ├─/sys/fs/cgroup/systemd          cgroup      cgroup  rw,nosuid,nodev,noexec
+│ │ ├─/sys/fs/cgroup/blkio            cgroup      cgroup  rw,nosuid,nodev,noexec
+│ │ ├─/sys/fs/cgroup/cpu,cpuacct      cgroup      cgroup  rw,nosuid,nodev,noexec
+│ │ ├─/sys/fs/cgroup/memory           cgroup      cgroup  rw,nosuid,nodev,noexec
+│ │ ├─/sys/fs/cgroup/perf_event       cgroup      cgroup  rw,nosuid,nodev,noexec
+│ │ ├─/sys/fs/cgroup/hugetlb          cgroup      cgroup  rw,nosuid,nodev,noexec
+│ │ ├─/sys/fs/cgroup/net_cls,net_prio cgroup      cgroup  rw,nosuid,nodev,noexec
+│ │ ├─/sys/fs/cgroup/cpuset           cgroup      cgroup  rw,nosuid,nodev,noexec
+│ │ ├─/sys/fs/cgroup/pids             cgroup      cgroup  rw,nosuid,nodev,noexec
+│ │ ├─/sys/fs/cgroup/devices          cgroup      cgroup  rw,nosuid,nodev,noexec
+│ │ ├─/sys/fs/cgroup/freezer          cgroup      cgroup  rw,nosuid,nodev,noexec
+│ │ └─/sys/fs/cgroup/rdma             cgroup      cgroup  rw,nosuid,nodev,noexec
+│ ├─/sys/fs/pstore                    pstore      pstore  rw,nosuid,nodev,noexec
+│ ├─/sys/firmware/efi/efivars         efivarfs    efivarf rw,nosuid,nodev,noexec
+│ ├─/sys/fs/bpf                       bpf         bpf     rw,nosuid,nodev,noexec
+│ ├─/sys/kernel/debug                 debugfs     debugfs rw,nosuid,nodev,noexec
+│ ├─/sys/kernel/config                configfs    configf rw,nosuid,nodev,noexec
+│ └─/sys/fs/fuse/connections          fusectl     fusectl rw,nosuid,nodev,noexec
+├─/proc                               proc        proc    rw,nosuid,nodev,noexec
+│ └─/proc/sys/fs/binfmt_misc          systemd-1   autofs  rw,relatime,fd=35,pgrp
+├─/dev                                udev        devtmpf rw,nosuid,relatime,siz
+│ ├─/dev/pts                          devpts      devpts  rw,nosuid,noexec,relat
+│ ├─/dev/shm                          tmpfs       tmpfs   rw,nosuid,nodev
+│ ├─/dev/mqueue                       mqueue      mqueue  rw,nosuid,nodev,noexec
+│ └─/dev/hugepages                    hugetlbfs   hugetlb rw,relatime,pagesize=2
+├─/run                                tmpfs       tmpfs   rw,nosuid,noexec,relat
+│ ├─/run/lock                         tmpfs       tmpfs   rw,nosuid,nodev,noexec
+│ └─/run/user/1001                    tmpfs       tmpfs   rw,nosuid,nodev,relati
+│   ├─/run/user/1001/gvfs             gvfsd-fuse  fuse.gv rw,nosuid,nodev,relati
+│   └─/run/user/1001/doc              /dev/fuse   fuse    rw,nosuid,nodev,relati
+├─/snap/gnome-logs/93                 /dev/loop0  squashf ro,nodev,relatime
+├─/snap/core18/1705                   /dev/loop1  squashf ro,nodev,relatime
+├─/snap/gnome-logs/81                 /dev/loop3  squashf ro,nodev,relatime
+├─/snap/gnome-characters/495          /dev/loop4  squashf ro,nodev,relatime
+├─/snap/gnome-3-28-1804/71            /dev/loop2  squashf ro,nodev,relatime
+├─/snap/gnome-calculator/704          /dev/loop5  squashf ro,nodev,relatime
+├─/snap/core/8935                     /dev/loop6  squashf ro,nodev,relatime
+├─/snap/gnome-calculator/544          /dev/loop7  squashf ro,nodev,relatime
+├─/snap/gtk-common-themes/1474        /dev/loop9  squashf ro,nodev,relatime
+├─/snap/gnome-3-28-1804/116           /dev/loop13 squashf ro,nodev,relatime
+├─/snap/gtk-common-themes/1440        /dev/loop11 squashf ro,nodev,relatime
+├─/snap/core18/1668                   /dev/loop10 squashf ro,nodev,relatime
+├─/snap/core/8689                     /dev/loop12 squashf ro,nodev,relatime
+├─/snap/gnome-characters/399          /dev/loop8  squashf ro,nodev,relatime
+└─/boot/efi                           /dev/sda2   vfat    rw,relatime,fmask=0077
+]0;riya@pc-of-rinu: ~/ceccs18c50/cs232/1104[01;32mriya@pc-of-rinu[00m:[01;34m~/ceccs18c50/cs232/1104[00m$ exit
+exit
+
+Script done on 2020-04-11 17:47:32+05:30 [COMMAND_EXIT_CODE="0"]

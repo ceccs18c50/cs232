@@ -1,0 +1,71 @@
+CEC CS 18 C50       11-04-2020
+
+Rinu Elisabath Mathew
+
+ip:117.222.147.50
+
+--------------------------------
+#1: Shell script to show system configurations(S4)
+
+---------------------------------
+
+Command/Shell script/Program name
+-------------------------------
+
+	Shell script : sys_info_1.sh
+  
+
+---------------------------------
+
+Output
+
+-------------------------------------
+
+	info1.png contains the system details :
+
+	Currently logged user and his login name
+	current shell
+	home directory
+	operating system type
+	current path setting
+	current working directory
+	no. of users currently logged in
+
+------------------------------------------
+
+Remarks if any:
+------------------------------------------
+
+
+--------------------------------------------
+#2: Shell script to show system configurations(S5)
+
+---------------------------------
+
+Command/Shell script/Program name
+-------------------------------
+
+	Shell script : sys_info_2.sh
+  
+
+---------------------------------
+
+Output
+
+-------------------------------------
+
+	OS and version,release no.,kernel version
+	all available shells
+	CPU information
+	memory information
+	hard disk information
+	file system (mounted)
+	
+
+------------------------------------------
+
+Remarks if any:
+------------------------------------------
+
+
+
